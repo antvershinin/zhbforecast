@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f49"
+  },
+  "id": "kras",
+  "name": "Краснодар",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f4a"
+  },
+  "id": "zen",
+  "name": "Зенит",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f4b"
+  },
+  "id": "dyn",
+  "name": "Динамо",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f4c"
+  },
+  "id": "loko",
+  "name": "Локомотив",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f4d"
+  },
+  "id": "spm",
+  "name": "Спартак",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f4e"
+  },
+  "id": "kryl",
+  "name": "Крылья Советов",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f4f"
+  },
+  "id": "rub",
+  "name": "Рубин",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f50"
+  },
+  "id": "cska",
+  "name": "ЦСКА",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f51"
+  },
+  "id": "pari",
+  "name": "Пари НН",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f52"
+  },
+  "id": "rost",
+  "name": "Ростов",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f53"
+  },
+  "id": "fak",
+  "name": "Факел",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f54"
+  },
+  "id": "ural",
+  "name": "Урал",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f55"
+  },
+  "id": "akhm",
+  "name": "Ахмат",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f56"
+  },
+  "id": "oren",
+  "name": "Оренбург",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f57"
+  },
+  "id": "balt",
+  "name": "Балтика",
+  "logo": ""
+},
+{
+  "_id": {
+    "$oid": "65c4b235551ea7aeccb00f58"
+  },
+  "id": "soch",
+  "name": "Сочи",
+  "logo": ""
+}]
