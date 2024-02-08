@@ -7,7 +7,6 @@ const TeamSchema = new mongoose.Schema({
 });
 
 const MatchSchema = new mongoose.Schema({
-  id: { type: Number, required: true },
   team1: { type: String, required: true },
   score1: { type: Number },
   team2: { type: String, required: true },
@@ -16,5 +15,13 @@ const MatchSchema = new mongoose.Schema({
   is_finished: { type: Boolean, required: true, default: false },
 });
 
+const UserSchema = new mongoose.Schema({
+  name : {type: String, required : true},
+  points : {type : Array},
+  matchday : {type : Array},
+  user_id : {type : String}
+})
+
 export const Team = mongoose.model("teams", TeamSchema);
 export const Match = mongoose.model("matches", MatchSchema);
+export const User = mongoose.model('users', UserSchema)

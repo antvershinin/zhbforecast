@@ -1,14 +1,17 @@
 import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
-import { Team } from "./Models";
 import { Match } from "./Models";
+import { adminRouter } from "./Routers/adminRouter";
+import { userRouter } from "./Routers/userRouter";
 
 const DB_URL = "mongodb://127.0.0.1:27017/zhbforecast";
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/api/admin', adminRouter)
+app.use('/api/user/', userRouter)
 
 const port = 8000;
 
@@ -27,26 +30,6 @@ const startApp = async () => {
     console.log(e);
   }
 };
-
-app.get("/getteams", async (req, res) => {
-  try {
-    const { teamname } = req.query;
-    const data = await Team.find({ id: teamname });
-    res.send(data);
-  } catch (e) {
-    console.log(e);
-  }
-});
-
-app.post("/setmatches", async (req, res) => {
-  try {
-    await Match.insertMany(req.body);
-    console.log(req.body);
-    res.send("Added Succesfully");
-  } catch (e) {
-    console.log(e);
-  }
-});
 
 app.get("/getmatches", async (req, res) => {
   try {
