@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "65c5c9a6d7c545fc10f9b255"
+  },
+  "teams": [
+    "loko",
+    "ural"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5c9a6d7c545fc10f9b256"
+  },
+  "teams": [
+    "spm",
+    "kryl"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5c9a6d7c545fc10f9b257"
+  },
+  "teams": [
+    "akhm",
+    "rost"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5c9a6d7c545fc10f9b258"
+  },
+  "teams": [
+    "zen",
+    "pari"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5cd461a03da086dd45186"
+  },
+  "teams": [
+    "fak",
+    "dyn"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5cd461a03da086dd45187"
+  },
+  "teams": [
+    "soch",
+    "oren"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5cd461a03da086dd45188"
+  },
+  "teams": [
+    "balt",
+    "rub"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+},
+{
+  "_id": {
+    "$oid": "65c5cd461a03da086dd45189"
+  },
+  "teams": [
+    "kras",
+    "cska"
+  ],
+  "score1": 0,
+  "score2": 0,
+  "result": "X",
+  "is_finished": false,
+  "__v": 0,
+  "tour": 1
+}]

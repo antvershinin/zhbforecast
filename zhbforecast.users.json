@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "65c5cc3f1a03da086dd45176"
+  },
+  "name": "Cерега Дж.",
+  "points": [],
+  "team": "ural",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cc511a03da086dd45178"
+  },
+  "name": "Лёня",
+  "points": [],
+  "team": "loko",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cc641a03da086dd4517a"
+  },
+  "name": "Ваня",
+  "points": [],
+  "team": "spm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cc6c1a03da086dd4517c"
+  },
+  "name": "Дима Р.",
+  "points": [],
+  "team": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cc771a03da086dd4517e"
+  },
+  "name": "Дима У.",
+  "points": [],
+  "team": "akhm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cc7b1a03da086dd45180"
+  },
+  "name": "Дима Д.",
+  "points": [],
+  "team": "rost",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cc9f1a03da086dd45182"
+  },
+  "name": "Серёга П.",
+  "points": [],
+  "team": "zen",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5cca41a03da086dd45184"
+  },
+  "name": "Слава",
+  "points": [],
+  "team": "pari",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce651a03da086dd4518b"
+  },
+  "name": "Дед",
+  "points": [],
+  "team": "fak",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce731a03da086dd4518d"
+  },
+  "name": "Лёха К.",
+  "points": [],
+  "team": "dyn",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce7b1a03da086dd4518f"
+  },
+  "name": "Антоха",
+  "points": [],
+  "team": "soch",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce7f1a03da086dd45191"
+  },
+  "name": "Шура",
+  "points": [],
+  "team": "oren",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce851a03da086dd45193"
+  },
+  "name": "Паша",
+  "points": [],
+  "team": "balt",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce891a03da086dd45195"
+  },
+  "name": "Кир",
+  "points": [],
+  "team": "rub",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce921a03da086dd45197"
+  },
+  "name": "Лёха Р.",
+  "points": [],
+  "team": "kras",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c5ce971a03da086dd45199"
+  },
+  "name": "Стас",
+  "points": [],
+  "team": "cska",
+  "__v": 0
+}]
