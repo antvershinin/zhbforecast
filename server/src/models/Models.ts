@@ -4,31 +4,29 @@ const TeamSchema = new mongoose.Schema({
   id: { type: String, required: true },
   name: { type: String, required: true },
   logo: { type: String },
+  user_id : String
 });
 
 const ForecastSchema = new mongoose.Schema({
-  users: [String],
-  user1forecast: [{ team1: Number, team2: Number }],
-  user2forecast: [{ team1: Number, team2: Number }],
-  score1: [Number],
-  score2: [Number],
+  user_id: String,
+  user_forecast: [],
+  user_score: [Number],
+  result : String,
+
 });
 
 const MatchSchema = new mongoose.Schema({
-  tour: { type: Number, required: true },
-  teams_data: {
-    teams: { type: Array, required: true },
-    score1: { type: Number, default: "" },
-    score2: { type: Number, default: "" },
-    result: { type: String, default: "" },
-    status: { type: String, default: "" },
-  },
-  users_data: {
-    users: { type: Array },
-    user1score: { type: Array },
-    user2score: { type: Array },
-  },
-});
+  tour: { type: Number, required: true, default : 1 },
+  teams: { type: Array, required: true },
+  users: { type: Array },
+  score1: { type: Number, default: "" },
+  score2: { type: Number, default: "" },
+  result: { type: String, default: "" },
+  status: { type: String, default: "" },
+})
+
+
+
 
 const UserSchema = new mongoose.Schema({
   name: { type: String, required: true },

@@ -6,3 +6,5 @@ export const adminRouter = Router();
 adminRouter.post("/setmatches", adminController.setMatches);
 
 adminRouter.get("/getteams", adminController.getTeams);
+
+adminRouter.put('/editmatches', adminController.editMatches)

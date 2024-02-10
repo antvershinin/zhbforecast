@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { Team } from "../models/Models";
 import adminUtils from "../utils/admin/adminUtils";
 
 class AdminController {
@@ -18,6 +17,15 @@ class AdminController {
       res.send(data);
     } catch (e) {
       console.log(e);
+    }
+  }
+
+  async editMatches(req:Request, res:Response) {
+    try {
+      const data = await adminUtils.editMatches(req.body)
+      res.send(data)
+    } catch (e) {
+      console.log(e)
     }
   }
 }

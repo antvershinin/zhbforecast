@@ -2,8 +2,9 @@ import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import { Match } from "./models/Models";
-import { adminRouter } from "./routers/adminRouter";
-import { userRouter } from "./routers/userRouter";
+import { adminRouter } from "./Routers/adminRouter";
+import { userRouter } from "./Routers/userRouter";
+import { matchRouter } from "./Routers/matchesRouter";
 
 const DB_URL = "mongodb://127.0.0.1:27017/zhbforecast";
 
@@ -11,7 +12,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/admin", adminRouter);
-app.use("/api/user/", userRouter);
+app.use("/api/user", userRouter);
+app.use("/api/matches", matchRouter)
 
 const port = 8000;
 

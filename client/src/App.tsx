@@ -4,8 +4,7 @@ import "./App.css";
 function App() {
   const user = {
     id: 213,
-    team: "Спартак",
-  };
+      };
 
   const matches = [
     {
@@ -39,7 +38,7 @@ function App() {
   ];
 
   const foreCast = {
-    user: { id: 213, team: "Спартак" },
+    user: { id: 213 },
     matches: [
       {
         id: 1,
@@ -155,13 +154,13 @@ function App() {
                     <div key={index}>
                       <div>
                         <label htmlFor={`matches.${index}.team1`}>
-                          {matches[index].team1}
+                          {matches[index].teams[0]}
                         </label>
                         <Field name={`matches.${index}.score1`} type="text" />
                       </div>
                       <div>
                         <label htmlFor={`matches.${index + 1}.team2`}>
-                          {matches[index].team2}
+                          {matches[index].teams[1]}
                         </label>
                         <Field name={`matches.${index}.score2`} type="text" />
                       </div>
