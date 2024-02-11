@@ -1,7 +1,6 @@
 import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
-import { Match } from "./models/Models";
 import { adminRouter } from "./Routers/adminRouter";
 import { userRouter } from "./Routers/userRouter";
 import { matchRouter } from "./Routers/matchesRouter";
@@ -32,14 +31,5 @@ const startApp = async () => {
     console.log(e);
   }
 };
-
-app.get("/getmatches", async (req, res) => {
-  try {
-    const result = await Match.find();
-    res.send(result);
-  } catch (e) {
-    console.log(e);
-  }
-});
 
 startApp();

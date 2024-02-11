@@ -20,9 +20,9 @@ class AdminController {
     }
   }
 
-  async editMatches(req:Request, res:Response) {
+  async editScore(req:Request, res:Response) {
     try {
-      const data = await adminUtils.editMatches(req.body)
+      const data = await adminUtils.editScore(req.body)
       res.send(data)
     } catch (e) {
       console.log(e)

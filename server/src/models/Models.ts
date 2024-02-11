@@ -7,25 +7,14 @@ const TeamSchema = new mongoose.Schema({
   user_id : String
 });
 
-const ForecastSchema = new mongoose.Schema({
-  user_id: String,
-  user_forecast: [],
-  user_score: [Number],
-  result : String,
 
-});
+const TourSchema = new mongoose.Schema({
+  tour_number : {type: Number, required : true},
+  matches : [{teams : [], score1: {type : Number, default : ''}, score2 : {type : Number, default : ''}, users : [{user_name : String, user_id : String}], result : {type : String, default : ""}}],
+  forecasts : [{user_id : String, user_score : [], user_forecast : [{score1 : Number, score2 : Number, result : String}]}],
+  table: [{user_id : String, user_name : String, points : {type : Number, default : 0} }]
 
-const MatchSchema = new mongoose.Schema({
-  tour: { type: Number, required: true, default : 1 },
-  teams: { type: Array, required: true },
-  users: { type: Array },
-  score1: { type: Number, default: "" },
-  score2: { type: Number, default: "" },
-  result: { type: String, default: "" },
-  status: { type: String, default: "" },
 })
-
-
 
 
 const UserSchema = new mongoose.Schema({
@@ -34,7 +23,7 @@ const UserSchema = new mongoose.Schema({
   team: { type: String, default: "" },
 });
 
+export const Tour = mongoose.model('tours', TourSchema)
 export const Team = mongoose.model("teams", TeamSchema);
-export const Match = mongoose.model("matches", MatchSchema);
 export const User = mongoose.model("users", UserSchema);
-export const Forecast = mongoose.model("forecasts", ForecastSchema);
+

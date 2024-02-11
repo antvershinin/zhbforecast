@@ -2,178 +2,180 @@ import { Field, FieldArray, Form, Formik } from "formik";
 import "./App.css";
 
 function App() {
-  const user = {
-    id: 213,
-      };
 
-  const matches = [
+  const response = [
     {
-      id: 1,
-      teams: ["loko", "ural"],
-      score1: "",
-      score2: "",
-      finished: "",
+        "_id": "65c4b235551ea7aeccb00f49",
+        "id": "kras",
+        "name": "Краснодар",
+        "logo": "",
+        "user_id": "65c5ce921a03da086dd45197",
+        "user_name": "Лёха Р."
     },
     {
-      id: 2,
-      teams: ["spm", "kryl"],
-      score1: "",
-      score2: "",
-      finished: "",
+        "_id": "65c4b235551ea7aeccb00f4a",
+        "id": "zen",
+        "name": "Зенит",
+        "logo": "",
+        "user_id": "65c5cc9f1a03da086dd45182",
+        "user_name": "Серёга П."
     },
     {
-      id: 3,
-      teams: ["akhm", "rost"],
-      score1: "",
-      score2: "",
-      finished: "",
+        "_id": "65c4b235551ea7aeccb00f4b",
+        "id": "dyn",
+        "name": "Динамо",
+        "logo": "",
+        "user_id": "65c5ce731a03da086dd4518d",
+        "user_name": "Лёха К."
     },
     {
-      id: 4,
-      teams: ["zen", "pari"],
-      score1: "",
-      score2: "",
-      finished: "",
+        "_id": "65c4b235551ea7aeccb00f4c",
+        "id": "loko",
+        "name": "Локомотив",
+        "logo": "",
+        "user_id": "65c5cc511a03da086dd45178",
+        "user_name": "Лёня"
     },
-  ];
-
-  const foreCast = {
-    user: { id: 213 },
-    matches: [
-      {
-        id: 1,
-        team1: "Ростов",
-        team2: "Крылья Советов",
-        score1: "1",
-        score2: "2",
-        finished: "2",
-      },
-      {
-        id: 2,
-        team1: "ЦСКА",
-        team2: "Оренбург",
-        score1: "1",
-        score2: "1",
-        finished: "X",
-      },
-      {
-        id: 3,
-        team1: "Краснодар",
-        team2: "Рубин",
-        score1: "2",
-        score2: "0",
-        finished: "1",
-      },
-      {
-        id: 4,
-        team1: "Ахмат",
-        team2: "Урал",
-        score1: "0",
-        score2: "1",
-        finished: "2",
-      },
-    ],
-  };
-  const result = {
-    matches: [
-      {
-        id: 1,
-        team1: "Ростов",
-        team2: "Крылья Советов",
-        score1: "1",
-        score2: "2",
-        finished: "2",
-      },
-      {
-        id: 2,
-        team1: "ЦСКА",
-        team2: "Оренбург",
-        score1: "2",
-        score2: "0",
-        finished: "",
-      },
-      {
-        id: 3,
-        team1: "Краснодар",
-        team2: "Рубин",
-        score1: "3",
-        score2: "1",
-        finished: "1",
-      },
-      {
-        id: 4,
-        team1: "Ахмат",
-        team2: "Урал",
-        score1: "1",
-        score2: "3",
-        finished: "2",
-      },
-    ],
-  };
-
-  const userResultMatchday: string[] = [];
-
-  const setResults = () => {
-    const forecast = foreCast.matches;
-    const results = result.matches;
-    for (let i = 0; i < foreCast.matches.length; i++) {
-      if (forecast[i].finished !== results[i].finished)
-        userResultMatchday.push("0");
-      else if (
-        forecast[i].score1 === results[i].score1 &&
-        forecast[i].score2 === results[i].score2
-      )
-        userResultMatchday.push("5");
-      else if (
-        Number(forecast[i].score1) - Number(forecast[i].score2) ==
-        Number(results[i].score1) - Number(results[i].score2)
-      )
-        userResultMatchday.push("2");
-      else userResultMatchday.push("1");
+    {
+        "_id": "65c4b235551ea7aeccb00f4d",
+        "id": "spm",
+        "name": "Спартак",
+        "logo": "",
+        "user_id": "65c5cc641a03da086dd4517a",
+        "user_name": "Ваня"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f4e",
+        "id": "kryl",
+        "name": "Крылья Советов",
+        "logo": "",
+        "user_id": "65c5cc6c1a03da086dd4517c",
+        "user_name": "Дима Р."
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f4f",
+        "id": "rub",
+        "name": "Рубин",
+        "logo": "",
+        "user_id": "65c5ce891a03da086dd45195",
+        "user_name": "Кир"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f50",
+        "id": "cska",
+        "name": "ЦСКА",
+        "logo": "",
+        "user_id": "65c5ce971a03da086dd45199",
+        "user_name": "Стас"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f51",
+        "id": "pari",
+        "name": "Пари НН",
+        "logo": "",
+        "user_id": "65c5cca41a03da086dd45184",
+        "user_name": "Слава"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f52",
+        "id": "rost",
+        "name": "Ростов",
+        "logo": "",
+        "user_id": "65c5cc7b1a03da086dd45180",
+        "user_name": "Дима Д."
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f53",
+        "id": "fak",
+        "name": "Факел",
+        "logo": "",
+        "user_id": "65c5ce651a03da086dd4518b",
+        "user_name": "Дед"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f54",
+        "id": "ural",
+        "name": "Урал",
+        "logo": "",
+        "user_id": "65c5cc3f1a03da086dd45176",
+        "user_name": "Серёга Дж."
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f55",
+        "id": "akhm",
+        "name": "Ахмат",
+        "logo": "",
+        "user_id": "65c5cc771a03da086dd4517e",
+        "user_name": "Дима У."
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f56",
+        "id": "oren",
+        "name": "Оренбург",
+        "logo": "",
+        "user_id": "65c5ce7f1a03da086dd45191",
+        "user_name": "Шура"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f57",
+        "id": "balt",
+        "name": "Балтика",
+        "logo": "",
+        "user_id": "65c5ce851a03da086dd45193",
+        "user_name": "Паша"
+    },
+    {
+        "_id": "65c4b235551ea7aeccb00f58",
+        "id": "soch",
+        "name": "Сочи",
+        "logo": "",
+        "user_id": "65c5ce7b1a03da086dd4518f",
+        "user_name": "Антоха"
     }
-    console.log("user results", userResultMatchday);
-  };
+]
 
-  // Должно быть [5,0,2,1]
+const request = {}
 
-  const initialValues = {
-    user,
-    matches,
-  };
+const setRequest = () => {
 
-  return (
-    <div>
-      <h1>Forecast</h1>
-      <Formik initialValues={initialValues} onSubmit={setResults}>
-        {({ values }) => (
-          <Form>
-            <FieldArray name="matches">
-              {() => (
-                <div>
-                  {values.matches.map((match, index) => (
-                    <div key={index}>
-                      <div>
-                        <label htmlFor={`matches.${index}.team1`}>
-                          {matches[index].teams[0]}
-                        </label>
-                        <Field name={`matches.${index}.score1`} type="text" />
-                      </div>
-                      <div>
-                        <label htmlFor={`matches.${index + 1}.team2`}>
-                          {matches[index].teams[1]}
-                        </label>
-                        <Field name={`matches.${index}.score2`} type="text" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </FieldArray>
-            <button type="submit">Invite</button>
-          </Form>
-        )}
-      </Formik>
-    </div>
+}
+
+  return ( 
+    <>
+    
+    </>
+    // <div>
+    //   <h1>Forecast</h1>
+    //   <Formik initialValues={initialValues} onSubmit={setResults}>
+    //     {({ values }) => (
+    //       <Form>
+    //         <FieldArray name="matches">
+    //           {() => (
+    //             <div>
+    //               {values.matches.map((match, index) => (
+    //                 <div key={index}>
+    //                   <div>
+    //                     <label htmlFor={`matches.${index}.team1`}>
+    //                       {matches[index].teams[0]}
+    //                     </label>
+    //                     <Field name={`matches.${index}.score1`} type="text" />
+    //                   </div>
+    //                   <div>
+    //                     <label htmlFor={`matches.${index + 1}.team2`}>
+    //                       {matches[index].teams[1]}
+    //                     </label>
+    //                     <Field name={`matches.${index}.score2`} type="text" />
+    //                   </div>
+    //                 </div>
+    //               ))}
+    //             </div>
+    //           )}
+    //         </FieldArray>
+    //         <button type="submit">Invite</button>
+    //       </Form>
+    //     )}
+    //   </Formik>
+    // </div>
   );
 }
 

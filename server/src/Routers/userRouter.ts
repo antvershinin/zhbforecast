@@ -13,3 +13,12 @@ userRouter.post("/register", async (req, res) => {
     console.log(e);
   }
 });
+
+userRouter.get('/getusers', async (req,res)=>{
+  try {
+    const data = await User.find()
+    res.send(data)
+  } catch (e) {
+    console.log(e)
+  }
+})
