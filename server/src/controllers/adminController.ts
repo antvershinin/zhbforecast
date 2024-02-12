@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import adminUtils from "../utils/admin/adminUtils";
+import adminUtils from "../utils/adminUtils";
 
 class AdminController {
   async setMatches(req: Request, res: Response) {
@@ -20,12 +20,12 @@ class AdminController {
     }
   }
 
-  async editScore(req:Request, res:Response) {
+  async editScore(req: Request, res: Response) {
     try {
-      const data = await adminUtils.editScore(req.body)
-      res.send(data)
+      const data = await adminUtils.editScore(req.body);
+      res.send(data);
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
   }
 }
