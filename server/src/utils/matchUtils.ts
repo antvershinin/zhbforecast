@@ -26,18 +26,18 @@ class MatchUtils {
       const result = await Tour.findById(data.tour._id);
       const forecastsOld = result.forecasts;
 
-      forecastsOld.map((el) => {
-        if (
-          el.user1.user_id === data.forecasts.user_id &&
-          el.user1.user_forecast.length === 0
-        )
-          el.user1.user_forecast = [...data.forecasts.user_forecast];
-        if (
-          el.user2.user_id === data.forecasts.user_id &&
-          el.user2.user_forecast.length === 0
-        )
-          el.user2.user_forecast = [...data.forecasts.user_forecast];
-      });
+      // forecastsOld.map((el) => {
+      //   if (
+      //     el.users.user_id === data.forecasts.user_id &&
+      //     el.users.user_forecast.length === 0
+      //   )
+      //     el.users.user_forecast = [...data.forecasts.user_forecast];
+      //   if (
+      //     el.users.user_id === data.forecasts.user_id &&
+      //     el.users.user_forecast.length === 0
+      //   )
+      //     el.users.user_forecast = [...data.forecasts.user_forecast];
+      // });
 
       const updated_tour = await Tour.findOneAndUpdate(
         { _id: data.tour._id },

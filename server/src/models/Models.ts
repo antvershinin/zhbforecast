@@ -22,18 +22,14 @@ const TourSchema = new mongoose.Schema({
   forecasts: [
     {
       doubleMatch: Number,
-      user1: {
-        user_id: String,
-        user_name: String,
-        user_score: [],
-        user_forecast: [],
-      },
-      user2: {
-        user_id: String,
-        user_name: String,
-        user_score: [],
-        user_forecast: [],
-      },
+      users: [
+        {
+          user_id: String,
+          user_name: String,
+          user_score: [],
+          user_forecast: [],
+        },
+      ],
     },
   ],
   table: [

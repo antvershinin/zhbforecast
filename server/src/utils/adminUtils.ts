@@ -39,29 +39,16 @@ class AdminUtils {
     try {
       const teams = await Team.find();
       const forecasts = [];
-      data.matches.map((el, index) => {
-        const team1Index = teams.findIndex((team) => team.id === el.team1);
-        const team2Index = teams.findIndex((team) => team.id === el.team2);
-        forecasts.push({
-          doubleMatch: index,
-          user1: {
-            user_id: teams[team1Index].user_id,
-            user_name: teams[team1Index].user_name,
-          },
-          user2: {
-            user_id: teams[team2Index].user_id,
-            user_name: teams[team2Index].user_name,
-          },
-        });
-      });
 
-      const matches1 = await Tour.create({
-        tour_number: data.tour_number,
-        matches: data.matches,
-        forecasts: forecasts,
-      });
+      data.matches.map((el) => {});
 
-      return matches1;
+      // const matches1 = await Tour.create({
+      //   tour_number: data.tour_number,
+      //   matches: data.matches,
+      //   forecasts: forecasts,
+      // });
+
+      return data;
     } catch (e) {
       console.log(e);
     }
@@ -81,8 +68,7 @@ class AdminUtils {
 
       forecasts.map((el) => {
         for (let i = 0; i < 2; i++) {
-          el.user1.user_score = countResults(el, matches);
-          el.user2.user_score = countResults(el, matches);
+          el.users[i].user_score = countResults(el, matches);
         }
       });
 
