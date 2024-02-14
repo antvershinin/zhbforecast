@@ -1,0 +1,203 @@
+[{
+  "_id": {
+    "$oid": "65cc5cfba3a5385a951dfd5a"
+  },
+  "tour_number": 18,
+  "matches": [],
+  "forecasts": [],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "points": 14,
+      "wins": 4,
+      "draws": 2,
+      "losses": 12,
+      "forecast_points": 151,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5b"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "points": 20,
+      "wins": 6,
+      "draws": 2,
+      "losses": 10,
+      "forecast_points": 128,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5c"
+      }
+    },
+    {
+      "user_id": "65c5cc641a03da086dd4517a",
+      "user_name": "Ваня",
+      "points": 18,
+      "wins": 5,
+      "draws": 3,
+      "losses": 10,
+      "forecast_points": 143,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5d"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "points": 29,
+      "wins": 9,
+      "draws": 2,
+      "losses": 7,
+      "forecast_points": 175,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5e"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "points": 25,
+      "wins": 8,
+      "draws": 1,
+      "losses": 9,
+      "forecast_points": 149,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5f"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "points": 26,
+      "wins": 8,
+      "draws": 2,
+      "losses": 8,
+      "forecast_points": 198,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd60"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "points": 28,
+      "wins": 9,
+      "draws": 1,
+      "losses": 8,
+      "forecast_points": 162,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd61"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 6,
+      "forecast_points": 167,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd62"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "points": 23,
+      "wins": 7,
+      "draws": 2,
+      "losses": 9,
+      "forecast_points": 136,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd63"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "points": 27,
+      "wins": 8,
+      "draws": 3,
+      "losses": 7,
+      "forecast_points": 158,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd64"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "points": 22,
+      "wins": 7,
+      "draws": 1,
+      "losses": 10,
+      "forecast_points": 173,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd65"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "points": 31,
+      "wins": 10,
+      "draws": 1,
+      "losses": 7,
+      "forecast_points": 207,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd66"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "points": 31,
+      "wins": 10,
+      "draws": 1,
+      "losses": 7,
+      "forecast_points": 179,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd67"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "points": 26,
+      "wins": 8,
+      "draws": 2,
+      "losses": 8,
+      "forecast_points": 170,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd68"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "points": 34,
+      "wins": 11,
+      "draws": 1,
+      "losses": 6,
+      "forecast_points": 186,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd69"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 6,
+      "forecast_points": 172,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd6a"
+      }
+    }
+  ],
+  "__v": 0
+}]
