@@ -12,8 +12,7 @@ const TourSchema = new mongoose.Schema({
   tour_number: { type: Number, required: true },
   matches: [
     {
-      team1: String,
-      team2: String,
+      teams: Array,
       score1: { type: Number, default: "" },
       score2: { type: Number, default: "" },
       result: { type: String, default: "" },
@@ -21,15 +20,12 @@ const TourSchema = new mongoose.Schema({
   ],
   forecasts: [
     {
-      doubleMatch: Number,
-      users: [
-        {
-          user_id: String,
-          user_name: String,
-          user_score: [],
-          user_forecast: [],
-        },
-      ],
+      user_id: String,
+      user_name: String,
+      user_score: [Number],
+      forecast_points: Number,
+      user_forecast: [],
+      user_doubleMatch: Number,
     },
   ],
   table: [
@@ -37,6 +33,10 @@ const TourSchema = new mongoose.Schema({
       user_id: String,
       user_name: String,
       points: { type: Number, default: 0 },
+      wins: { type: Number, default: 0 },
+      draws: { type: Number, default: 0 },
+      losses: { type: Number, default: 0 },
+      forecast_points: { type: Number, default: 0 },
     },
   ],
 });

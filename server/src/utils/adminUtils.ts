@@ -7,7 +7,7 @@ interface IReqEditscore {
 
 interface IReqSettour {
   tour_number: number;
-  matches: [{ team1: String; team2: String }];
+  matches: [{ teams: [String] }];
 }
 
 const countResults = (el, resultsArr) => {
@@ -16,7 +16,7 @@ const countResults = (el, resultsArr) => {
   const result = [];
 
   for (let i = 0; i < resultsArr.length; i++) {
-    double = el.doubleMatch === i;
+    double = el.user_doubleMatch === i;
 
     if (el.user_forecast[i].result !== resultsArr[i].result) result[i] = 0;
     else if (
@@ -38,17 +38,32 @@ class AdminUtils {
   async setMatches(data: IReqSettour) {
     try {
       const teams = await Team.find();
+      const previousTour = await Tour.findOne({
+        tour_number: data.tour_number - 1,
+      });
+      const previousTable = previousTour.table;
       const forecasts = [];
 
-      data.matches.map((el) => {});
+      data.matches.map((el, index) => {
+        for (let i = 0; i < 2; i++) {
+          const teamIndex = teams.findIndex((team) => team.id === el.teams[i]);
 
-      // const matches1 = await Tour.create({
-      //   tour_number: data.tour_number,
-      //   matches: data.matches,
-      //   forecasts: forecasts,
-      // });
+          forecasts.push({
+            user_id: teams[teamIndex].user_id,
+            user_name: teams[teamIndex].user_name,
+            user_doubleMatch: index,
+          });
+        }
+      });
 
-      return data;
+      const matches1 = await Tour.create({
+        tour_number: data.tour_number,
+        matches: data.matches,
+        forecasts: forecasts,
+        table: previousTable,
+      });
+
+      return matches1;
     } catch (e) {
       console.log(e);
     }
@@ -56,10 +71,9 @@ class AdminUtils {
   async editScore(data: IReqEditscore) {
     try {
       const currentTour = await Tour.findById(data.tour._id);
-      const users = await User.find();
       const { matches, forecasts, tour_number } = currentTour;
-      // const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
-      // const previousTable = previousTour.table;
+      const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
+      const previousTable = previousTour.table;
 
       const index = matches.findIndex((el) => el.id === data.match._id);
       matches[index].score1 = data.match.score1;
@@ -67,9 +81,39 @@ class AdminUtils {
       matches[index].result = data.match.result;
 
       forecasts.map((el) => {
-        for (let i = 0; i < 2; i++) {
-          el.users[i].user_score = countResults(el, matches);
+        el.user_score = countResults(el, matches);
+        el.forecast_points = el.user_score.reduce(
+          (acc, score) => acc + score,
+          0
+        );
+      });
+
+      for (let i = 0; i < forecasts.length; i += 2) {
+        const index0 = previousTable.findIndex(
+          (el) => el.user_id === forecasts[i].user_id
+        );
+        const index1 = previousTable.findIndex(
+          (el) => el.user_id === forecasts[i + 1].user_id
+        );
+        if (forecasts[i].forecast_points === forecasts[i + 1].forecast_points) {
+          previousTable[index0].draws += 1;
+          previousTable[index1].draws += 1;
+        } else if (
+          forecasts[i].forecast_points > forecasts[i + 1].forecast_points
+        ) {
+          previousTable[index0].wins += 1;
+          previousTable[index1].losses += 1;
+        } else {
+          previousTable[index0].losses += 1;
+          previousTable[index1].wins += 1;
         }
+        previousTable[index0].forecast_points += forecasts[i].forecast_points;
+        previousTable[index1].forecast_points +=
+          forecasts[i + 1].forecast_points;
+      }
+
+      previousTable.map((el) => {
+        el.points = el.wins * 3 + el.draws;
       });
 
       const updated = await Tour.findByIdAndUpdate(
@@ -77,11 +121,12 @@ class AdminUtils {
         {
           matches: matches,
           forecasts: forecasts,
+          table: previousTable,
         },
         { new: true }
       );
 
-      return updated;
+      return updated.table;
     } catch (e) {
       console.log(e);
     }

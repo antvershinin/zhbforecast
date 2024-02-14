@@ -24,24 +24,15 @@ class MatchUtils {
   async setForecast(data: IReqForecast) {
     try {
       const result = await Tour.findById(data.tour._id);
-      const forecastsOld = result.forecasts;
-
-      // forecastsOld.map((el) => {
-      //   if (
-      //     el.users.user_id === data.forecasts.user_id &&
-      //     el.users.user_forecast.length === 0
-      //   )
-      //     el.users.user_forecast = [...data.forecasts.user_forecast];
-      //   if (
-      //     el.users.user_id === data.forecasts.user_id &&
-      //     el.users.user_forecast.length === 0
-      //   )
-      //     el.users.user_forecast = [...data.forecasts.user_forecast];
-      // });
-
-      const updated_tour = await Tour.findOneAndUpdate(
+      const { forecasts } = result;
+      forecasts.map((el) => {
+        if (el.user_id === data.forecasts.user_id && !el.user_forecast.length) {
+          el.user_forecast = data.forecasts.user_forecast;
+        }
+      });
+      await Tour.findOneAndUpdate(
         { _id: data.tour._id },
-        { forecasts: forecastsOld },
+        { forecasts: forecasts },
         { new: true }
       );
     } catch (e) {

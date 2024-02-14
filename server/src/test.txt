@@ -2,38 +2,29 @@
   "tour_number": "1",
   "matches": [
     {
-      "team1" : "loko",
-      "team2" : "ural"
+      "teams" : ["kras", "dyn"]
       
     },
     {
-      "team1":"spm",
-      "team2":"kryl"
-      
+      "teams":["cska","ural"]
     },
     {
-      "team1":"akhm",
-      "team2":"rost"
+      "teams":["pari","zen"]
     },
     {
-      "team1":"zen",
-      "team2":"pari"
+      "teams":["loko","rub"]
     },
     {
-      "team1":"fak",
-      "team2":"dyn"
+      "teams":["akhm","kryl"]
     },
     {
-      "team1":"soch",
-      "team2":"oren"
+      "teams":["spm","oren"]
     },
     {
-      "team1":"balt",
-      "team2":"rub"
+      "teams":["rost","fak"]
     },
     {
-      "team1":"kras",
-      "team2":"cska"
+      "teams":["soch","balt"]
     }
   ]
 }
