@@ -43,7 +43,8 @@ const TourSchema = new mongoose.Schema({
 
 const UserSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  team: { type: String, default: "" },
+  login: { type: String, required: true },
+  password: { type: String, required: true },
 });
 
 export const Tour = mongoose.model("tours", TourSchema);

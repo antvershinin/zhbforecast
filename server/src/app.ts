@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import cors from "cors";
 import { adminRouter } from "./routers/adminRouter";
 import { userRouter } from "./routers/userRouter";
 import { matchRouter } from "./routers/matchesRouter";
@@ -10,6 +11,7 @@ const DB_URL = "mongodb://127.0.0.1:27017/zhbforecast";
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.use("/api/admin", adminRouter);
 app.use("/api/user", userRouter);
 app.use("/api/matches", matchRouter);

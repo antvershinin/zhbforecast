@@ -1,24 +1,7 @@
 import { Router } from "express";
-import { User } from "../models/Models";
+import userController from "../controllers/userController";
 
 export const userRouter = Router();
 
-userRouter.post("/register", async (req, res) => {
-  try {
-    const { name } = req.body;
-    await User.create({ name: name });
-    console.log(req.body);
-    res.send("New User added");
-  } catch (e) {
-    console.log(e);
-  }
-});
-
-userRouter.get('/getusers', async (req,res)=>{
-  try {
-    const data = await User.find()
-    res.send(data)
-  } catch (e) {
-    console.log(e)
-  }
-})
+userRouter.post("/login", userController.login);
+userRouter.post("/auth", userController.auth);
