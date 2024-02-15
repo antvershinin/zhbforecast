@@ -1,6 +1,12 @@
-import { PropsWithChildren } from "react";
-import styles from "./Layout.module.css";
+import { FC } from "react";
+import { Outlet } from "react-router";
+import image from './background.png'
 
-export const Layout: React.FC<PropsWithChildren> = ({ children }) => {
-  return <div className={styles.layout}>{children}</div>;
+
+export const Layout: FC = () => {
+  return <div >
+
+  <Outlet/>
+
+  </div >
 };
