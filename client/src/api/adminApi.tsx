@@ -7,6 +7,5 @@ interface ITeam {
 
 export const getTeams = async () => {
   const response = await AxiosInstance.get<ITeam>("/admin/getteams");
-  console.log(response);
   return response;
 };

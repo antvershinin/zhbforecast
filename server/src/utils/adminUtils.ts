@@ -1,12 +1,10 @@
-import { Team, User, Tour } from "../models/Models";
+import { Team, User, Tour, Eurotour } from "../models/Models";
 
 interface IReqEditscore {
-  tour: { _id: string };
   match: { _id: string; score1: number; score2: number; result: string };
 }
 
 interface IReqSettour {
-  tour_number: number;
   matches: [{ teams: [String] }];
 }
 
@@ -35,13 +33,12 @@ const countResults = (el, resultsArr) => {
 };
 
 class AdminUtils {
-  async setMatches(data: IReqSettour) {
+  async setRPLMatches(data: IReqSettour) {
     try {
+      const currentTour = await Tour.findOne().sort({ tour_number: -1 });
       const teams = await Team.find();
-      const previousTour = await Tour.findOne({
-        tour_number: data.tour_number - 1,
-      });
-      const previousTable = previousTour.table;
+
+      const previousTable = currentTour.table;
       const forecasts = [];
 
       data.matches.map((el, index) => {
@@ -57,7 +54,7 @@ class AdminUtils {
       });
 
       const matches1 = await Tour.create({
-        tour_number: data.tour_number,
+        tour_number: currentTour.tour_number + 1,
         matches: data.matches,
         forecasts: forecasts,
         table: previousTable,
@@ -68,9 +65,9 @@ class AdminUtils {
       console.log(e);
     }
   }
-  async editScore(data: IReqEditscore) {
+  async editScoreRPL(data: IReqEditscore) {
     try {
-      const currentTour = await Tour.findById(data.tour._id);
+      const currentTour = await Tour.findOne().sort({ tour_number: -1 });
       const { matches, forecasts, tour_number } = currentTour;
       const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
       const previousTable = previousTour.table;
@@ -117,7 +114,7 @@ class AdminUtils {
       });
 
       const updated = await Tour.findByIdAndUpdate(
-        data.tour._id,
+        currentTour._id,
         {
           matches: matches,
           forecasts: forecasts,
@@ -135,6 +132,32 @@ class AdminUtils {
     try {
       const data = await Team.find();
       return data;
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  async setEUROMatches(data: IReqSettour) {
+    try {
+      const currentTour = await Eurotour.findOne().sort({ tour_number: -1 });
+      const table = currentTour.table;
+      const users = await User.find();
+      const forecasts = [];
+      users.map((el) => {
+        if (el.euro) {
+          forecasts.push({
+            user_id: el._id,
+            user_name: el.name,
+          });
+        }
+      });
+
+      const result = await Eurotour.create({
+        tour_number: currentTour.tour_number + 1,
+        table,
+        matches: data.matches,
+        forecasts,
+      });
+      return result;
     } catch (e) {
       console.log(e);
     }

@@ -3,8 +3,10 @@ import adminController from "../controllers/adminController";
 
 export const adminRouter = Router();
 
-adminRouter.post("/setmatches", adminController.setMatches);
+adminRouter.post("/rpl/setmatches", adminController.setRPLMatches);
 
 adminRouter.get("/getteams", adminController.getTeams);
 
-adminRouter.put('/editscore', adminController.editScore)
+adminRouter.put("/rpl/editscore", adminController.editScoreRPL);
+
+adminRouter.post("/euro/setmatches", adminController.setEUROMatches);

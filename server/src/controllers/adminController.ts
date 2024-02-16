@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import adminUtils from "../utils/adminUtils";
 
 class AdminController {
-  async setMatches(req: Request, res: Response) {
+  async setRPLMatches(req: Request, res: Response) {
     try {
-      const data = await adminUtils.setMatches(req.body);
+      const data = await adminUtils.setRPLMatches(req.body);
       res.send(data);
     } catch (e) {
       console.log(e);
@@ -20,9 +20,18 @@ class AdminController {
     }
   }
 
-  async editScore(req: Request, res: Response) {
+  async editScoreRPL(req: Request, res: Response) {
     try {
-      const data = await adminUtils.editScore(req.body);
+      const data = await adminUtils.editScoreRPL(req.body);
+      res.send(data);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  async setEUROMatches(req: Request, res: Response) {
+    try {
+      const data = await adminUtils.setEUROMatches(req.body);
       res.send(data);
     } catch (e) {
       console.log(e);

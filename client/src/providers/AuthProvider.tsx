@@ -5,7 +5,7 @@ import React, {
   PropsWithChildren,
   useContext,
 } from "react";
-import { loginDB } from "../api/userApi";
+import { getMeDB, loginDB } from "../api/userApi";
 
 export interface IUser {
   user_id: string;
@@ -25,6 +25,16 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
   const loginHandler = async (login: string, password: string) => {
     try {
       const result = await loginDB(login, password);
+      setUser(result.user);
+      localStorage.setItem("token", result.token);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const getmeHandler = async () => {
+    try {
+      const result = await getMeDB();
       setUser(result);
     } catch (e) {
       console.log(e);

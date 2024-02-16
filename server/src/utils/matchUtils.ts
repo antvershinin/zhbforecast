@@ -1,4 +1,6 @@
-import { Team, User, Tour } from "../models/Models";
+import { Request } from "express";
+import { Team, User, Tour, Eurotour } from "../models/Models";
+import jwt from "jsonwebtoken";
 
 interface IReqForecast {
   tour: { _id: string };
@@ -9,14 +11,11 @@ interface IReqForecast {
 }
 
 class MatchUtils {
-  async getMatches() {
+  async getMatches(data) {
     try {
-      // const matches1 = await Match.find();
-      // const result = []
-      // matches1.map((el)=> {
-      //   result.push(el.teams)
-      // })
-      // return result
+      const matches1 = await Tour.findOne().sort({ tour_number: -1 });
+
+      return matches1;
     } catch (e) {
       console.log(e);
     }
@@ -35,6 +34,36 @@ class MatchUtils {
         { forecasts: forecasts },
         { new: true }
       );
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  async getEUROMatches(data: Request) {
+    try {
+      const tour = await Eurotour.findOne().sort({ tour_number: -1 });
+      const { table, matches, forecasts } = tour;
+
+      if (!data.headers.authorization) {
+        return { table };
+      }
+
+      console.log(data.headers.authorization);
+
+      if (data.headers.authorization) {
+        const decoded = jwt.decode(data.headers.authorization, {
+          json: true,
+        });
+
+        const index = forecasts.findIndex((el) => el.user_id === decoded._id);
+
+        if (!index) {
+          return { table };
+        } else if (forecasts[index].user_forecast.length === 0) {
+          return { tour, canMakeForecast: true };
+        } else {
+          return { tour };
+        }
+      }
     } catch (e) {
       console.log(e);
     }
