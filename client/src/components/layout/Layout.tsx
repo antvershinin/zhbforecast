@@ -6,10 +6,12 @@ import { Header } from "../header/Header";
 export const Layout: FC = () => {
   return (
     <div className={style.outlet}>
+
       <Header />
-      <div className={style.body}>
-        <Outlet />
-      </div>
+
+
+      <Outlet />
+
     </div>
   );
 };

@@ -15,6 +15,8 @@ export interface IUser {
 interface IContext {
   user: IUser | null;
   loginHandler: (login: string, password: string) => Promise<void>;
+  getmeHandler: () => Promise<void>;
+  logoutHandler: () => void
 }
 
 export const AuthContext = createContext<IContext>({} as IContext);
@@ -41,7 +43,12 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
     }
   };
 
-  const value = { user, loginHandler };
+  const logoutHandler = () => {
+    setUser(null)
+    localStorage.removeItem('key')
+  }
+
+  const value = { user, loginHandler, getmeHandler, logoutHandler };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

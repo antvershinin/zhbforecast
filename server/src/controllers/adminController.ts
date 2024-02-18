@@ -37,6 +37,15 @@ class AdminController {
       console.log(e);
     }
   }
+  
+  async editScoreEuro(req:Request, res:Response) {
+    try {
+      const data = await adminUtils.editScoreEuro(req.body)
+      res.send('success')
+    } catch (e) {
+      console.log(e)
+    }
+  }
 }
 
 export default new AdminController();

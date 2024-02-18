@@ -49,10 +49,15 @@ class UserController {
 
   async auth(req: Request, res: Response) {
     try {
-      const decoded = <{ _id: string }>jtw.decode(req.headers.authorization);
+      const decoded = <{ _id: string }>jtw.decode(req.headers.authorization, {
+        json:true
+      });
       const { _id } = decoded;
       const user = await User.findById(_id);
-      res.send(user);
+      res.send({
+        user_id : user._id,
+        user_name : user.name
+      });
     } catch (e) {
       console.log(e);
     }

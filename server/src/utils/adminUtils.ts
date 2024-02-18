@@ -162,6 +162,67 @@ class AdminUtils {
       console.log(e);
     }
   }
+  async editScoreEuro(data : {id:string, score1 : number, score2 : number}) {
+    try {
+      const currentTour = await Eurotour.findOne().sort({ tour_number: -1 });
+      const {matches,forecasts, tour_number} = currentTour
+      const previousTour = await Eurotour.findOne({ tour_number: tour_number - 1 });
+      const previousTable = previousTour.table
+
+      const matchUpdated = {
+        id : data.id,
+        score1 : data.score1,
+        score2 : data.score2,
+        result : data.score1 > data.score2 ? '1' : data.score2 > data.score1 ? '2' : 'X'
+      }
+
+      matches.map((el)=>{
+        if(el.id === matchUpdated.id) {
+          el.score1 = matchUpdated.score1,
+          el.score2 = matchUpdated.score2,
+          el.result = matchUpdated.result
+        }
+      })
+
+      forecasts.map((el)=>{
+        const tableIndex = previousTable.findIndex((el1)=>el1.user_id === el.user_id)
+       for (let i = 0; i < matches.length; i ++) {
+         if (!el.user_forecast.length) return
+         let double = matches[i].is_double
+        if (el.user_forecast[i].result !== matches[i].result) {
+          el.user_score[i] = 0
+        } else if (el.user_forecast[i].score1 === matches[i].score1 && el.user_forecast[i].score2 === matches[i].score2){
+          el.user_score[i] = double ? 8 : 4
+          previousTable[tableIndex].exact += 1
+        } else if (el.user_forecast[i].score1 - el.user_forecast[i].score2 === matches[i].score1 - matches[i].score2) {
+          el.user_score[i] = double ? 4 : 2 
+          previousTable[tableIndex].difference += 1
+        } else {
+          el.user_score[i] = double ? 2 : 1
+          previousTable[tableIndex].outcome += 1
+        }
+       }
+       el.forecast_points = el.user_score.reduce(
+        (acc, score) => acc + score,
+        0
+      );
+      previousTable[tableIndex].forecast_points += el.forecast_points 
+    
+    })
+
+
+      const result = await Eurotour.findByIdAndUpdate(currentTour._id, {
+        matches,
+        forecasts,
+        table : previousTable
+      })
+
+      return result
+      
+    } catch (e) {
+      console.log(e)
+    }
+  }
 }
 
 export default new AdminUtils();

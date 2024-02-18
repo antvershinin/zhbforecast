@@ -1,0 +1,29 @@
+.match {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.match_double {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(16, 247, 16);
+}
+
+.team_name {
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.score {
+    font-family: "Mitr";
+    font-size: 400;
+}

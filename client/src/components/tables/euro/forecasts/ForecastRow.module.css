@@ -1,0 +1,54 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    border-bottom: 1px solid;
+    border-radius: 5px;
+}
+
+.name {
+    width: 82px;
+    display: flex;
+    align-items: center;    
+}
+
+.forecast_wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    gap: 2px;
+}
+
+.forecasts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mitr";
+    font-size: 17px;
+    width: 28px;
+}
+
+.total {
+    font-family: "Mitr";
+    font-size: 20px;
+    display: flex;
+    align-items: center;  
+    border-left: 1px solid;  
+    border-radius: 5px;
+}
+
+.forecasts_double {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Mitr";
+    font-size: 17px;
+    width: 28px;
+    background-color: rgb(16, 247, 16);
+    border-radius: 5px;
+}

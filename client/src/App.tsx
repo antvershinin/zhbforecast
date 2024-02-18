@@ -6,9 +6,10 @@ import { useAuth } from "./providers/AuthProvider";
 import { RplPage } from "./pages/rplpage/RplPage";
 import { Loader } from "./components/loader/Loader";
 import { EurocupPage } from "./pages/eurocuppage/EurocupPage";
+import { LoginPage } from "./pages/loginpage/LoginPage";
 
 const App: FC = () => {
-  const { user, loginHandler } = useAuth();
+  const { user, loginHandler, getmeHandler } = useAuth();
   const [loading, setLoading] = useState(true);
   const token = localStorage.getItem("token");
 
@@ -17,11 +18,13 @@ const App: FC = () => {
       setLoading(false);
     }
     const setuser = async () => {
-      const res = await loginHandler("wellik11", "aa9911v");
+      const res = await getmeHandler()
     };
     setuser();
     setLoading(false);
+
   }, []);
+
 
   return (
     <div>
@@ -33,6 +36,7 @@ const App: FC = () => {
             <Route index element={<HomePage />} />
             <Route path="/rpl" element={<RplPage />} />
             <Route path="/euro" element={<EurocupPage />} />
+            <Route path="/login" element={<LoginPage/>}/>
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>

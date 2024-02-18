@@ -1,18 +1,19 @@
 .body {
   padding: 0;
   margin: 0;
+
 }
 
 .main-loader {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(45deg, rgb(219, 222, 222), rgb(204, 199, 200));
 }
 
 .main_fader {
   width: 100%;
   height: 100vh;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(45deg, rgb(219, 222, 222), rgb(204, 199, 200));
   .loader {
     position: fixed;
     top: 50%;

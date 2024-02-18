@@ -10,3 +10,5 @@ adminRouter.get("/getteams", adminController.getTeams);
 adminRouter.put("/rpl/editscore", adminController.editScoreRPL);
 
 adminRouter.post("/euro/setmatches", adminController.setEUROMatches);
+
+adminRouter.put('/euro/editscore', adminController.editScoreEuro)
