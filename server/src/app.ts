@@ -2,9 +2,9 @@ import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { adminRouter } from "./routers/adminRouter";
-import { userRouter } from "./routers/userRouter";
-import { matchRouter } from "./routers/matchesRouter";
+import { adminRouter } from "./Routers/adminRouter";
+import { userRouter } from "./Routers/userRouter";
+import { matchRouter } from "./Routers/matchesRouter";
 
 const DB_URL = "mongodb://127.0.0.1:27017/zhbforecast";
 
@@ -24,7 +24,7 @@ app.get("/", (req: Request, res: Response) => {
 
 const startApp = async () => {
   try {
-    await mongoose.connect(DB_URL);
+    await mongoose.connect(DB_URL, {user : 'wellik11', pass:'9885824884', authSource : 'admin'});
     console.log("DB connected");
     app.listen(port, () => {
       console.log(`Server running on port${port}`);
