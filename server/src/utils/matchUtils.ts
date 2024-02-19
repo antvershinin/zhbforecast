@@ -43,16 +43,20 @@ class MatchUtils {
       const tour = await Eurotour.findOne().sort({ tour_number: -1 });
       const { table, matches, forecasts } = tour;
 
-      table.sort((a,b)=>{
-        return b.forecast_points - a.forecast_points || b.exact - a.exact || b.difference - a.difference || b.outcome - a.outcome
-        
-      })
+      table.sort((a, b) => {
+        return (
+          b.forecast_points - a.forecast_points ||
+          b.exact - a.exact ||
+          b.difference - a.difference ||
+          b.outcome - a.outcome
+        );
+      });
 
       if (!data.headers.authorization) {
         return { table };
       }
 
-        if (data.headers.authorization) {
+      if (data.headers.authorization) {
         const decoded = jwt.decode(data.headers.authorization, {
           json: true,
         });
@@ -71,39 +75,43 @@ class MatchUtils {
       console.log(e);
     }
   }
-  async setEUROForcasts(data : {id : string, forecasts : [{score1 : number, score2 : number}]}) {
+  async setEUROForcasts(data: Request) {
     try {
       const tour = await Eurotour.findOne().sort({ tour_number: -1 });
 
-      // const decoded = jwt.decode(data.headers.authorization, {
-      //     json: true,
-      //   })
+      const decoded = jwt.decode(data.headers.authorization, {
+        json: true,
+      });
 
-      const forecastsUpdated = []
-      
-      data.forecasts.map((el)=>{
+      const forecastsUpdated = [];
+
+      data.body.matches.map((el) => {
         forecastsUpdated.push({
-          score1 : el.score1,
-          score2 : el.score2,
-          result : el.score1 > el.score2 ? '1' : el.score2 > el.score1 ? '2' : 'X'
-        })
-      })
+          score1: el.score1,
+          score2: el.score2,
+          result:
+            el.score1 > el.score2 ? "1" : el.score2 > el.score1 ? "2" : "X",
+        });
+      });
 
-      const {forecasts} = tour
+      const { forecasts } = tour;
 
-      forecasts.map((el)=> {
-        if (el.user_id === data.id) {
-          el.user_forecast= forecastsUpdated
+      forecasts.map((el) => {
+        if (el.user_id === decoded._id) {
+          el.user_forecast = forecastsUpdated;
         }
-      })
+      });
 
-      await Eurotour.findByIdAndUpdate({_id : tour._id}, {
-        forecasts
-      }) 
-        ;
-      
+      const result = await Eurotour.findByIdAndUpdate(
+        { _id: tour._id },
+        {
+          forecasts,
+        },
+        { new: true }
+      );
+      return result;
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
   }
 }

@@ -26,12 +26,12 @@ class MatchController {
       console.log(e);
     }
   }
-  async setEuroForecast(req:Request, res:Response) {
+  async setEuroForecast(req: Request, res: Response) {
     try {
-      const result = await matchUtils.setEUROForcasts(req.body)
-      res.send(result)
+      const result = await matchUtils.setEUROForcasts(req);
+      res.send(result);
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
   }
 }
