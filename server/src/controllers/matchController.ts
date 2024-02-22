@@ -4,7 +4,7 @@ import matchUtils from "../utils/matchUtils";
 class MatchController {
   async getMatches(req: Request, res: Response) {
     try {
-      const data = await matchUtils.getMatches(req.headers.authorization);
+      const data = await matchUtils.getTour(req);
       res.send(data);
     } catch (e) {
       console.log(e);

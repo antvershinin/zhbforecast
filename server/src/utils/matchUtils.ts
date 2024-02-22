@@ -2,38 +2,87 @@ import { Request } from "express";
 import { Team, User, Tour, Eurotour } from "../models/Models";
 import jwt from "jsonwebtoken";
 
-interface IReqForecast {
-  tour: { _id: string };
-  forecasts: {
-    user_id: string;
-    user_forecast: [{ score1: number; score2: number; result: string }];
-  };
-}
-
 class MatchUtils {
-  async getMatches(data) {
+  async getTour(data: Request) {
     try {
-      const matches1 = await Tour.findOne().sort({ tour_number: -1 });
+      const tour = await Tour.findOne().sort({ tour_number: -1 });
+      const { table, forecasts, matches } = tour;
 
-      return matches1;
+      table.sort((a, b) => {
+        return (
+          b.points - a.points ||
+          b.wins - a.wins ||
+          b.forecast_points - a.forecast_points
+        );
+      });
+
+      if (!data.headers.authorization) {
+        return { table, matches };
+      }
+
+      if (data.headers.authorization) {
+        const decoded = jwt.decode(data.headers.authorization, {
+          json: true,
+        });
+
+        const index = String(
+          forecasts.findIndex((el) => el.user_id === decoded._id)
+        );
+
+        const filtered = forecasts.map((el) => {
+          el.user_forecast.length === 0;
+        });
+
+        if (!filtered.length) {
+          return { tour };
+        }
+
+        if (!index) {
+          return { table };
+        } else if (forecasts[index].user_forecast.length === 0) {
+          return { table, matches, canMakeForecast: true };
+        } else {
+          return { table, matches };
+        }
+      }
     } catch (e) {
       console.log(e);
     }
   }
-  async setForecast(data: IReqForecast) {
+  async setForecast(data: Request) {
     try {
-      const result = await Tour.findById(data.tour._id);
-      const { forecasts } = result;
+      const tour = await Tour.findOne().sort({ tour_number: -1 });
+      const { forecasts } = tour;
+
+      const decoded = jwt.decode(data.headers.authorization, {
+        json: true,
+      });
+
+      const forecastsUpdated = [];
+
+      data.body.matches.map((el) => {
+        forecastsUpdated.push({
+          score1: el.score1,
+          score2: el.score2,
+          result:
+            el.score1 > el.score2 ? "1" : el.score2 > el.score1 ? "2" : "X",
+        });
+      });
+
       forecasts.map((el) => {
-        if (el.user_id === data.forecasts.user_id && !el.user_forecast.length) {
-          el.user_forecast = data.forecasts.user_forecast;
+        if (el.user_id === decoded._id) {
+          el.user_forecast = forecastsUpdated;
         }
       });
-      await Tour.findOneAndUpdate(
-        { _id: data.tour._id },
-        { forecasts: forecasts },
+
+      const result = await Tour.findByIdAndUpdate(
+        { _id: tour._id },
+        {
+          forecasts,
+        },
         { new: true }
       );
+      return result;
     } catch (e) {
       console.log(e);
     }
@@ -53,7 +102,7 @@ class MatchUtils {
       });
 
       if (!data.headers.authorization) {
-        return { table };
+        return { tour };
       }
 
       if (data.headers.authorization) {
@@ -61,7 +110,9 @@ class MatchUtils {
           json: true,
         });
 
-        const index = forecasts.findIndex((el) => el.user_id === decoded._id);
+        const index = String(
+          forecasts.findIndex((el) => el.user_id === decoded._id)
+        );
 
         if (!index) {
           return { table };
@@ -94,7 +145,7 @@ class MatchUtils {
         });
       });
 
-      const { forecasts } = tour;
+      const { forecasts, matches } = tour;
 
       forecasts.map((el) => {
         if (el.user_id === decoded._id) {
@@ -102,10 +153,20 @@ class MatchUtils {
         }
       });
 
+      const filtered = forecasts.map((el) => {
+        el.user_forecast.length === 0;
+      });
+
+      if (!filtered.length) {
+        const double = Math.floor(Math.random() * (8 - 1 + 1)) + 1;
+        matches[double - 1].is_double = true;
+      }
+
       const result = await Eurotour.findByIdAndUpdate(
         { _id: tour._id },
         {
           forecasts,
+          matches,
         },
         { new: true }
       );

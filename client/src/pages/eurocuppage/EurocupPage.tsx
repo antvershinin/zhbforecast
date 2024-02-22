@@ -65,9 +65,11 @@ export const EurocupPage = () => {
           <div>
             <EuroTable data={data.tour.table} />
           </div>
-          <div>
-            <EuroMatchesShow matches={data.tour.matches} />
-          </div>
+          {!data.tour.matches ? null : (
+            <div>
+              <EuroMatchesShow matches={data.tour.matches} />
+            </div>
+          )}
           <div>
             <ForecastList
               double_match={doubleMatch}
