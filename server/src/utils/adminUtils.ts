@@ -7,7 +7,7 @@ interface IReqEditscore {
 }
 
 interface IReqSettour {
-  matches: [{ teams: [String] }];
+  matches: [{ teams: [String], teams_names : [string]}];
 }
 
 const countResults = (el, resultsArr) => {
@@ -18,18 +18,18 @@ const countResults = (el, resultsArr) => {
   for (let i = 0; i < resultsArr.length; i++) {
     double = el.user_doubleMatch === i;
 
-    if (el.user_forecast[i].result !== resultsArr[i].result) result[i] = 0;
+    if (el.user_forecast[i].result !== resultsArr[i].result && resultsArr[i].result !== "") result[i] = 0;
     else if (
       el.user_forecast[i].score1 === resultsArr[i].score1 &&
-      el.user_forecast[i].score2 === resultsArr[i].score2
+      el.user_forecast[i].score2 === resultsArr[i].score2 && resultsArr[i].result !== ""
     )
       result[i] = double ? 10 : 5;
     else if (
       Number(el.user_forecast[i].score1) - Number(el.user_forecast[i].score2) ==
-      Number(resultsArr[i].score1) - Number(resultsArr[i].score2)
+      Number(resultsArr[i].score1) - Number(resultsArr[i].score2) && resultsArr[i].result !== ""
     )
       result[i] = double ? 4 : 2;
-    else result[i] = double ? 2 : 1;
+    else if (resultsArr[i].result !== "") result[i] = double ? 2 : 1;
   }
   return result;
 };
@@ -42,6 +42,7 @@ class AdminUtils {
 
       const previousTable = currentTour.table;
       const forecasts = [];
+      const matchesUpdated = []
 
       data.matches.map((el, index) => {
         for (let i = 0; i < 2; i++) {
@@ -56,6 +57,8 @@ class AdminUtils {
           });
         }
       });
+
+      
 
       const matches1 = await Tour.create({
         tour_number: currentTour.tour_number + 1,
@@ -199,38 +202,30 @@ class AdminUtils {
         }
       });
 
-      forecasts.map((el) => {
-        const tableIndex = previousTable.findIndex(
-          (el1) => el1.user_id === el.user_id
-        );
-        for (let i = 0; i < matches.length; i++) {
-          if (!el.user_forecast.length) return;
-          let double = matches[i].is_double;
-          if (el.user_forecast[i].result !== matches[i].result) {
-            el.user_score[i] = 0;
-          } else if (
-            el.user_forecast[i].score1 === matches[i].score1 &&
-            el.user_forecast[i].score2 === matches[i].score2
-          ) {
-            el.user_score[i] = double ? 8 : 4;
-            previousTable[tableIndex].exact += 1;
-          } else if (
-            el.user_forecast[i].score1 - el.user_forecast[i].score2 ===
-            matches[i].score1 - matches[i].score2
-          ) {
-            el.user_score[i] = double ? 4 : 2;
-            previousTable[tableIndex].difference += 1;
-          } else {
-            el.user_score[i] = double ? 2 : 1;
-            previousTable[tableIndex].outcome += 1;
-          }
+      forecasts.map((el)=>{
+        const tableIndex = previousTable.findIndex((el1)=>el1.user_id === el.user_id)
+       for (let i = 0; i < matches.length; i ++) {
+         let double = matches[i].is_double
+        if (el.user_forecast[i].result !== matches[i].result && matches[i].result !== "") {
+          el.user_score[i] = 0
+        } else if (el.user_forecast[i].score1 === matches[i].score1 && el.user_forecast[i].score2 === matches[i].score2 && matches[i].result !== ""){
+          el.user_score[i] = double ? 8 : 4
+          previousTable[tableIndex].exact += 1
+        } else if (el.user_forecast[i].score1 - el.user_forecast[i].score2 === matches[i].score1 - matches[i].score2 && matches[i].result !== "") {
+          el.user_score[i] = double ? 4 : 2 
+          previousTable[tableIndex].difference += 1
+        } else if (matches[i].result !== "") {
+          el.user_score[i] = double ? 2 : 1
+          previousTable[tableIndex].outcome += 1
         }
-        el.forecast_points = el.user_score.reduce(
-          (acc, score) => acc + score,
-          0
-        );
-        previousTable[tableIndex].forecast_points += el.forecast_points;
-      });
+       }
+       el.forecast_points = el.user_score.reduce(
+        (acc, score) => acc + score,
+        0
+      );
+      previousTable[tableIndex].forecast_points += el.forecast_points 
+    
+    })
 
       const result = await Eurotour.findByIdAndUpdate(currentTour._id, {
         matches,

@@ -13,6 +13,7 @@ const TourSchema = new mongoose.Schema({
   matches: [
     {
       teams: Array,
+      teams_names:Array,
       score1: { type: Number, default: "" },
       score2: { type: Number, default: "" },
       result: { type: String, default: "" },
@@ -78,6 +79,7 @@ const UserSchema = new mongoose.Schema({
   login: { type: String, required: true },
   password: { type: String, required: true },
   euro: Boolean,
+  is_admin : Boolean
 });
 
 export const Tour = mongoose.model("tours", TourSchema);

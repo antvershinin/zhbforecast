@@ -17,7 +17,7 @@ class MatchUtils {
       });
 
       if (!data.headers.authorization) {
-        return { table, matches };
+        return { tour : {table, matches} };
       }
 
       if (data.headers.authorization) {
@@ -35,14 +35,12 @@ class MatchUtils {
 
         if (!filtered.length) {
           return { tour };
-        }
-
-        if (!index) {
-          return { table };
+        } else if (!index) {
+          return { tour : {table, matches} };
         } else if (forecasts[index].user_forecast.length === 0) {
-          return { table, matches, canMakeForecast: true };
+          return { tour : { table, matches, canMakeForecast: true }};
         } else {
-          return { table, matches };
+          return { tour : { table, matches }};
         }
       }
     } catch (e) {

@@ -7,6 +7,7 @@ import { RplPage } from "./pages/rplpage/RplPage";
 import { Loader } from "./components/loader/Loader";
 import { EurocupPage } from "./pages/eurocuppage/EurocupPage";
 import { LoginPage } from "./pages/loginpage/LoginPage";
+import { AdminPage } from "./pages/adminpage/AdminPage";
 
 const App: FC = () => {
   const { user, loginHandler, getmeHandler } = useAuth();
@@ -16,15 +17,16 @@ const App: FC = () => {
   useEffect(() => {
     if (!token) {
       setLoading(false);
+
     }
     const setuser = async () => {
       const res = await getmeHandler()
-    };
+      };
     setuser();
     setLoading(false);
 
-  }, []);
 
+  }, []);
 
   return (
     <div>
@@ -37,6 +39,7 @@ const App: FC = () => {
             <Route path="/rpl" element={<RplPage />} />
             <Route path="/euro" element={<EurocupPage />} />
             <Route path="/login" element={<LoginPage/>}/>
+            <Route path="/admin" element={<AdminPage/>}/>
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>

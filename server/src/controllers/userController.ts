@@ -36,6 +36,8 @@ class UserController {
 
       const response = {
         user_name: user.name,
+        user_id:user._id,
+        is_admin : user.is_admin
       };
 
       res.send({
@@ -56,7 +58,8 @@ class UserController {
       const user = await User.findById(_id);
       res.send({
         user_id : user._id,
-        user_name : user.name
+        user_name : user.name,
+        is_admin : user.is_admin
       });
     } catch (e) {
       console.log(e);

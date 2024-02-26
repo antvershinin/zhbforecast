@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import matchUtils from "../utils/matchUtils";
 
 class MatchController {
-  async getMatches(req: Request, res: Response) {
+  async getTour(req: Request, res: Response) {
     try {
       const data = await matchUtils.getTour(req);
       res.send(data);
