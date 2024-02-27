@@ -12,7 +12,7 @@ class MatchController {
   }
   async setForecast(req: Request, res: Response) {
     try {
-      const result = matchUtils.setForecast(req.body);
+      const result = matchUtils.setForecast(req);
       res.send(result);
     } catch (e) {
       console.log(e);

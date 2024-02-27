@@ -1,7 +1,7 @@
 import { Team, User, Tour, Eurotour } from "../models/Models";
 
 interface IReqEditscore {
-  _id: string;
+  id: string;
   score1: number;
   score2: number;
 }
@@ -10,29 +10,7 @@ interface IReqSettour {
   matches: [{ teams: [String], teams_names : [string]}];
 }
 
-const countResults = (el, resultsArr) => {
-  let double;
 
-  const result = [];
-
-  for (let i = 0; i < resultsArr.length; i++) {
-    double = el.user_doubleMatch === i;
-
-    if (el.user_forecast[i].result !== resultsArr[i].result && resultsArr[i].result !== "") result[i] = 0;
-    else if (
-      el.user_forecast[i].score1 === resultsArr[i].score1 &&
-      el.user_forecast[i].score2 === resultsArr[i].score2 && resultsArr[i].result !== ""
-    )
-      result[i] = double ? 10 : 5;
-    else if (
-      Number(el.user_forecast[i].score1) - Number(el.user_forecast[i].score2) ==
-      Number(resultsArr[i].score1) - Number(resultsArr[i].score2) && resultsArr[i].result !== ""
-    )
-      result[i] = double ? 4 : 2;
-    else if (resultsArr[i].result !== "") result[i] = double ? 2 : 1;
-  }
-  return result;
-};
 
 class AdminUtils {
   async setRPLMatches(data: IReqSettour) {
@@ -79,7 +57,8 @@ class AdminUtils {
       const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
       const previousTable = previousTour.table;
 
-      const index = String(matches.findIndex((el) => el.id === data._id));
+
+      const index = String(matches.findIndex((el) => el.id === data.id));
       matches[index].score1 = data.score1;
       matches[index].score2 = data.score2;
       (matches[index].result =
@@ -88,9 +67,28 @@ class AdminUtils {
           : data.score2 > data.score1
           ? "2"
           : "X"),
+
         forecasts.map((el) => {
-          el.user_score = countResults(el, matches);
-          el.forecast_points = el.user_score.reduce(
+         
+          if (!el.user_forecast.length) return
+          let double;
+
+            for (let i = 0; i < matches.length; i++) {
+            double = el.user_doubleMatch === i;
+            if (el.user_forecast[i].result !== matches[i].result && matches[i].result !== "") el.user_score[i] = 0;
+            else if (
+              el.user_forecast[i].score1 === matches[i].score1 &&
+              el.user_forecast[i].score2 === matches[i].score2 && matches[i].result !== ""
+            )
+            el.user_score[i] = double ? 10 : 5;
+            else if (
+              Number(el.user_forecast[i].score1) - Number(el.user_forecast[i].score2) ==
+              Number(matches[i].score1) - Number(matches[i].score2) && matches[i].result !== ""
+            )
+            el.user_score[i] = double ? 4 : 2;
+            else if (matches[i].result !== "") el.user_score[i] = double ? 2 : 1;
+            }
+            el.forecast_points = el.user_score.reduce(
             (acc, score) => acc + score,
             0
           );

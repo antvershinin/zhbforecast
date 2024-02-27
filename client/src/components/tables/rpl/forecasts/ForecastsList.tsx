@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { IEuroForecasts } from "../../../../pages/eurocuppage/EurocupPage";
 import { ForecastRow } from "./ForecastRow";
+import { IRPLForecasts } from "../../../../pages/rplpage/RplPage";
 
 type Props = {
-    forecasts : IEuroForecasts[]
-    double_match : number | undefined
+    forecasts : IRPLForecasts[]
+    
 }
 
 export const ForecastList :FC<Props> = (props) => {
@@ -15,7 +15,7 @@ export const ForecastList :FC<Props> = (props) => {
               
             return (
 
-                <ForecastRow key={index} double_match={props.double_match} el={el}/>
+                <ForecastRow key={index} el={el}/>
             )
         })}    
     </div>

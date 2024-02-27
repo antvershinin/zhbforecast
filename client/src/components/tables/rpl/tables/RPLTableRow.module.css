@@ -62,14 +62,28 @@
   align-items: center;
   font-family: "Mitr";
   font-weight: 400;
-  width: 40px;
-
+  width: 45px;
+  border-right: 1px dotted;
+  border-left: 1px dotted;
+  justify-content: center;
 }
 
 .points {
   display: flex;
   justify-content: center;
   font-family: "Mitr";
-  width: 35px;
+  width: 30px;
 
+}
+.points_big {
+  display: flex;
+  justify-content: center;
+  font-family: "Mitr";
+  width: 50px;
+
+}
+
+.logo {
+  height: 30px;
+  width: 45px;
 }

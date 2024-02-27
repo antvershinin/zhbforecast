@@ -18,3 +18,12 @@ export const setEuroForecastsDB = async (
   });
   return result.status;
 };
+
+export const setRplForecastsDB = async (
+  matches: [{score1 : number; score2:number}]
+) => {
+  const result = await AxiosInstance.put('/matches/rpl/setforecast', {
+    matches
+  })
+  return result.status
+}

@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import { getRplMatches } from "../../api/matchesApi";
 import { RPLTable } from "../../components/tables/rpl/tables/RPLTable";
+import { RplMatchesShow } from "../../components/tables/rpl/matches/RplMatchesShow";
+import { ForecastList } from "../../components/tables/rpl/forecasts/ForecastsList";
+import { RPLForecastForm } from "../../components/forms/prlforms";
 
 export interface IRPLTable {
   user_name: string;
+  user_id:string;
   points:number;
   wins: number;
   draws: number;
@@ -26,8 +30,8 @@ export interface IRPLForecasts {
 }
 
 interface IRPLTour {
-  canMakeForecast?: boolean;
   tour: {
+    canMakeForecast?: boolean;
     forecasts?: IRPLForecasts[];
     matches?: IRPLMatch[];
     table?: IRPLTable[];
@@ -47,13 +51,30 @@ export const RplPage = () => {
     getData();
   }, []);
 
-
+ 
 
   return (
-    <div>
-    {!data?.tour.table ? null : (
-      <RPLTable data={data.tour.table}/>
-    )}
+    <div style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'40px'}}>
+      <div>
+        {!data?.tour.table ? null : (
+          <RPLTable data={data.tour.table}/>
+        )}
+      </div>
+      <div>
+        {!data?.tour.matches ? null : (
+          <RplMatchesShow matches={data.tour.matches} />
+        )}
+      </div>
+      <div>
+        {!data?.tour.forecasts ? null : (
+          <ForecastList forecasts={data.tour.forecasts}/>
+        )}
+      </div>
+      <div>
+        {!data?.tour.canMakeForecast ? null : (
+          <RPLForecastForm matches={data.tour.matches!}/>
+        )}
+      </div>
     </div>
   );
 };

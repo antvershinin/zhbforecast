@@ -1,21 +1,21 @@
 import { Field, FieldArray, Form, Formik } from "formik";
 import { FC } from "react";
-import { IEuroMatch } from "../../pages/eurocuppage/EurocupPage";
-import { setEuroForecastsDB } from "../../api/matchesApi";
 import { useNavigate } from "react-router";
+import { IRPLMatch } from "../../pages/rplpage/RplPage";
+import { setRplForecastsDB } from "../../api/matchesApi";
 
 type Props = {
-  matches: IEuroMatch[];
+  matches: IRPLMatch[];
 };
 
-export const EuroForecastForm: FC<Props> = (props) => {
+export const RPLForecastForm: FC<Props> = (props) => {
   const initialValues = props.matches;
 
   const navigate = useNavigate();
 
   const handleSubmit = async (values: any) => {
     try {
-      const result = await setEuroForecastsDB(values.matches);
+      const result = await setRplForecastsDB(values.matches);
       if (result === 200) {
         navigate("/home");
       }
@@ -39,7 +39,7 @@ export const EuroForecastForm: FC<Props> = (props) => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    width: "300px",
+                    width: "350px",
                   }}
                 >
                   {values.map((match, index) => (
@@ -57,16 +57,17 @@ export const EuroForecastForm: FC<Props> = (props) => {
                         style={{
                           display: "flex",
                           flexDirection: "row",
-                          gap: "20px",
+                          gap: "15px",
                         }}
                       >
                         <div
                           style={{
-                            width: "100px",
+                            width: "125px",
+                            
                           }}
                         >
                           <label htmlFor={`matches.${index}.team1`}>
-                            {props.matches[index].teams[0]}
+                            {props.matches[index].teams_names[0]}
                           </label>
                         </div>
                         <div style={{ width: "21px" }}>
@@ -80,7 +81,7 @@ export const EuroForecastForm: FC<Props> = (props) => {
                         style={{
                           display: "flex",
                           flexDirection: "row",
-                          gap: "50px",
+                          gap: "30px",
                         }}
                       >
                         <div style={{ width: "21px", marginLeft: "30px" }}>
@@ -91,7 +92,7 @@ export const EuroForecastForm: FC<Props> = (props) => {
                         </div>
                         <div style={{ width: "100px" }}>
                           <label htmlFor={`matches.${index + 1}.team2`}>
-                            {props.matches[index].teams[1]}
+                            {props.matches[index].teams_names[1]}
                           </label>
                         </div>
                       </div>
