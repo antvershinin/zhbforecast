@@ -33,7 +33,7 @@ class MatchUtils {
           el.user_forecast.length === 0;
         });
 
-        if (filtered.length) {
+        if (!filtered.length) {
           return { tour };
         } else if (!index) {
           return { tour: { table, matches } };
