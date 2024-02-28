@@ -7,10 +7,8 @@ interface IReqEditscore {
 }
 
 interface IReqSettour {
-  matches: [{ teams: [String], teams_names : [string]}];
+  matches: [{ teams: [String]; teams_names: [string] }];
 }
-
-
 
 class AdminUtils {
   async setRPLMatches(data: IReqSettour) {
@@ -20,7 +18,7 @@ class AdminUtils {
 
       const previousTable = currentTour.table;
       const forecasts = [];
-      const matchesUpdated = []
+      const matchesUpdated = [];
 
       data.matches.map((el, index) => {
         for (let i = 0; i < 2; i++) {
@@ -35,8 +33,6 @@ class AdminUtils {
           });
         }
       });
-
-      
 
       const matches1 = await Tour.create({
         tour_number: currentTour.tour_number + 1,
@@ -57,7 +53,6 @@ class AdminUtils {
       const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
       const previousTable = previousTour.table;
 
-
       const index = String(matches.findIndex((el) => el.id === data.id));
       matches[index].score1 = data.score1;
       matches[index].score2 = data.score2;
@@ -67,28 +62,34 @@ class AdminUtils {
           : data.score2 > data.score1
           ? "2"
           : "X"),
-
         forecasts.map((el) => {
-         
-          if (!el.user_forecast.length) return
+          if (!el.user_forecast.length) return;
           let double;
 
-            for (let i = 0; i < matches.length; i++) {
+          for (let i = 0; i < matches.length; i++) {
             double = el.user_doubleMatch === i;
-            if (el.user_forecast[i].result !== matches[i].result && matches[i].result !== "") el.user_score[i] = 0;
+            if (
+              el.user_forecast[i].result !== matches[i].result &&
+              matches[i].result !== ""
+            )
+              el.user_score[i] = 0;
             else if (
               el.user_forecast[i].score1 === matches[i].score1 &&
-              el.user_forecast[i].score2 === matches[i].score2 && matches[i].result !== ""
+              el.user_forecast[i].score2 === matches[i].score2 &&
+              matches[i].result !== ""
             )
-            el.user_score[i] = double ? 10 : 5;
+              el.user_score[i] = double ? 10 : 5;
             else if (
-              Number(el.user_forecast[i].score1) - Number(el.user_forecast[i].score2) ==
-              Number(matches[i].score1) - Number(matches[i].score2) && matches[i].result !== ""
+              Number(el.user_forecast[i].score1) -
+                Number(el.user_forecast[i].score2) ==
+                Number(matches[i].score1) - Number(matches[i].score2) &&
+              matches[i].result !== ""
             )
-            el.user_score[i] = double ? 4 : 2;
-            else if (matches[i].result !== "") el.user_score[i] = double ? 2 : 1;
-            }
-            el.forecast_points = el.user_score.reduce(
+              el.user_score[i] = double ? 4 : 2;
+            else if (matches[i].result !== "")
+              el.user_score[i] = double ? 2 : 1;
+          }
+          el.forecast_points = el.user_score.reduce(
             (acc, score) => acc + score,
             0
           );
@@ -200,30 +201,42 @@ class AdminUtils {
         }
       });
 
-      forecasts.map((el)=>{
-        const tableIndex = previousTable.findIndex((el1)=>el1.user_id === el.user_id)
-       for (let i = 0; i < matches.length; i ++) {
-         let double = matches[i].is_double
-        if (el.user_forecast[i].result !== matches[i].result && matches[i].result !== "") {
-          el.user_score[i] = 0
-        } else if (el.user_forecast[i].score1 === matches[i].score1 && el.user_forecast[i].score2 === matches[i].score2 && matches[i].result !== ""){
-          el.user_score[i] = double ? 8 : 4
-          previousTable[tableIndex].exact += 1
-        } else if (el.user_forecast[i].score1 - el.user_forecast[i].score2 === matches[i].score1 - matches[i].score2 && matches[i].result !== "") {
-          el.user_score[i] = double ? 4 : 2 
-          previousTable[tableIndex].difference += 1
-        } else if (matches[i].result !== "") {
-          el.user_score[i] = double ? 2 : 1
-          previousTable[tableIndex].outcome += 1
+      forecasts.map((el) => {
+        const tableIndex = previousTable.findIndex(
+          (el1) => el1.user_id === el.user_id
+        );
+        for (let i = 0; i < matches.length; i++) {
+          let double = matches[i].is_double;
+          if (
+            el.user_forecast[i].result !== matches[i].result &&
+            matches[i].result !== ""
+          ) {
+            el.user_score[i] = 0;
+          } else if (
+            el.user_forecast[i].score1 === matches[i].score1 &&
+            el.user_forecast[i].score2 === matches[i].score2 &&
+            matches[i].result !== ""
+          ) {
+            el.user_score[i] = double ? 8 : 4;
+            previousTable[tableIndex].exact += 1;
+          } else if (
+            el.user_forecast[i].score1 - el.user_forecast[i].score2 ===
+              matches[i].score1 - matches[i].score2 &&
+            matches[i].result !== ""
+          ) {
+            el.user_score[i] = double ? 4 : 2;
+            previousTable[tableIndex].difference += 1;
+          } else if (matches[i].result !== "") {
+            el.user_score[i] = double ? 2 : 1;
+            previousTable[tableIndex].outcome += 1;
+          }
         }
-       }
-       el.forecast_points = el.user_score.reduce(
-        (acc, score) => acc + score,
-        0
-      );
-      previousTable[tableIndex].forecast_points += el.forecast_points 
-    
-    })
+        el.forecast_points = el.user_score.reduce(
+          (acc, score) => acc + score,
+          0
+        );
+        previousTable[tableIndex].forecast_points += el.forecast_points;
+      });
 
       const result = await Eurotour.findByIdAndUpdate(currentTour._id, {
         matches,

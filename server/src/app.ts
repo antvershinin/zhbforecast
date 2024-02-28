@@ -24,10 +24,11 @@ app.get("/", (req: Request, res: Response) => {
 
 const startApp = async () => {
   try {
-    await mongoose.connect(
-      DB_URL
-      // , {user : 'wellik11', pass:'9885824884', authSource : 'admin'}
-    );
+    await mongoose.connect(DB_URL, {
+      user: "wellik11",
+      pass: "9885824884",
+      authSource: "admin",
+    });
     console.log("DB connected");
     app.listen(port, () => {
       console.log(`Server running on port${port}`);
