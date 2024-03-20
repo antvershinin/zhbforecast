@@ -3,15 +3,15 @@ import { IEuroMatch } from "../../../../pages/eurocuppage/EurocupPage";
 import { EuroMatchItem } from "./EuroMatchItem";
 
 type Props = {
-    matches : IEuroMatch[]
-}
+  matches: IEuroMatch[];
+};
 
-export const EuroMatchesShow:FC<Props> = (props) => {
-    return <div style={{display:"grid", gridTemplateColumns:'repeat(2, 1fr)', rowGap:'10px', gap:'10px'}}>
-    {props.matches.map((el, index)=>{
-        return (
-            <EuroMatchItem key={index} match={el}/>
-        )
-    })}
+export const EuroMatchesShow: FC<Props> = (props) => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+      {props.matches.map((el, index) => {
+        return <EuroMatchItem key={index} match={el} />;
+      })}
     </div>
-}
+  );
+};

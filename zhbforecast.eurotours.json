@@ -90,10 +90,10 @@
     {
       "user_id": "65c5cc3f1a03da086dd45176",
       "user_name": "Cерега Дж.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 23,
+      "exact": 2,
+      "difference": 3,
+      "outcome": 7,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d5"
       }
@@ -101,10 +101,10 @@
     {
       "user_id": "65c5cc6c1a03da086dd4517c",
       "user_name": "Дима Р.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 22,
+      "exact": 2,
+      "difference": 3,
+      "outcome": 7,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d6"
       }
@@ -112,10 +112,10 @@
     {
       "user_id": "65c5cc771a03da086dd4517e",
       "user_name": "Дима У.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 32,
+      "exact": 3,
+      "difference": 5,
+      "outcome": 6,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d7"
       }
@@ -123,10 +123,10 @@
     {
       "user_id": "65c5ce651a03da086dd4518b",
       "user_name": "Дед",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 26,
+      "exact": 2,
+      "difference": 4,
+      "outcome": 8,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d8"
       }
@@ -134,10 +134,10 @@
     {
       "user_id": "65c5ce7b1a03da086dd4518f",
       "user_name": "Антоха",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 29,
+      "exact": 3,
+      "difference": 2,
+      "outcome": 7,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d9"
       }
@@ -145,10 +145,10 @@
     {
       "user_id": "65c5ce7f1a03da086dd45191",
       "user_name": "Шура",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 30,
+      "exact": 4,
+      "difference": 4,
+      "outcome": 5,
       "_id": {
         "$oid": "65cf243595f9386a8094c2da"
       }
@@ -156,10 +156,10 @@
     {
       "user_id": "65c5ce891a03da086dd45195",
       "user_name": "Кир",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 29,
+      "exact": 2,
+      "difference": 4,
+      "outcome": 7,
       "_id": {
         "$oid": "65cf243595f9386a8094c2db"
       }
@@ -167,10 +167,10 @@
     {
       "user_id": "65c5ce921a03da086dd45197",
       "user_name": "Лёха Р.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 26,
+      "exact": 1,
+      "difference": 6,
+      "outcome": 7,
       "_id": {
         "$oid": "65cf243595f9386a8094c2dc"
       }
@@ -178,10 +178,10 @@
     {
       "user_id": "65cf17576073ac0823270d42",
       "user_name": "Намаз",
-      "forecast_points": 0,
-      "exact": 0,
+      "forecast_points": 32,
+      "exact": 5,
       "difference": 0,
-      "outcome": 0,
+      "outcome": 8,
       "_id": {
         "$oid": "65cf243595f9386a8094c2dd"
       }
@@ -192,195 +192,654 @@
 },
 {
   "_id": {
-    "$oid": "65cf52c4aeabc06232429e35"
+    "$oid": "65d4982c8278ca435f026d25"
   },
   "tour_number": 1,
   "matches": [
     {
       "teams": [
-        "Манчестер Сити",
-        "Эвертон"
+        "ПСВ",
+        "Боруссия"
       ],
-      "score1": null,
-      "score2": null,
-      "result": "",
-      "is_double": false,
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": true,
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e36"
-      }
-    },
-    {
-      "teams": [
-        "Дрита",
-        "Ллапи"
-      ],
-      "score1": null,
-      "score2": null,
-      "result": "",
-      "is_double": false,
-      "_id": {
-        "$oid": "65cf52c4aeabc06232429e37"
-      }
-    },
-    {
-      "teams": [
-        "Рома",
-        "Интер"
-      ],
-      "score1": null,
-      "score2": null,
-      "result": "",
-      "is_double": false,
-      "_id": {
-        "$oid": "65cf52c4aeabc06232429e38"
-      }
-    },
-    {
-      "teams": [
-        "Реал",
-        "Жирона"
-      ],
-      "score1": null,
-      "score2": null,
-      "result": "",
-      "is_double": false,
-      "_id": {
-        "$oid": "65cf52c4aeabc06232429e39"
-      }
-    },
-    {
-      "teams": [
-        "Байер",
-        "Бавария"
-      ],
-      "score1": null,
-      "score2": null,
-      "result": "",
-      "is_double": false,
-      "_id": {
-        "$oid": "65cf52c4aeabc06232429e3a"
-      }
-    },
-    {
-      "teams": [
-        "Астон Вилла",
-        "МЮ"
-      ],
-      "score1": null,
-      "score2": null,
-      "result": "",
-      "is_double": false,
-      "_id": {
-        "$oid": "65cf52c4aeabc06232429e3b"
+        "$oid": "65d4982c8278ca435f026d26"
       }
     },
     {
       "teams": [
         "Интер",
-        "Ордино"
+        "Атлетико"
       ],
-      "score1": null,
-      "score2": null,
-      "result": "",
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
       "is_double": false,
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e3c"
+        "$oid": "65d4982c8278ca435f026d27"
       }
     },
     {
       "teams": [
-        "Милан",
-        "Наполи"
+        "Порту",
+        "Арсенал"
       ],
-      "score1": null,
-      "score2": null,
-      "result": "",
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
       "is_double": false,
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e3d"
+        "$oid": "65d4982c8278ca435f026d28"
+      }
+    },
+    {
+      "teams": [
+        "Наполи",
+        "Барса"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d4982c8278ca435f026d29"
+      }
+    },
+    {
+      "teams": [
+        "Фрайбург",
+        "Ланс"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d4982c8278ca435f026d2a"
+      }
+    },
+    {
+      "teams": [
+        "Карабах",
+        "Брага"
+      ],
+      "score1": 0,
+      "score2": 2,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d4982c8278ca435f026d2b"
+      }
+    },
+    {
+      "teams": [
+        "Марсель",
+        "Шахтер"
+      ],
+      "score1": 3,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d4982c8278ca435f026d2c"
+      }
+    },
+    {
+      "teams": [
+        "Рома",
+        "Фейеноорд"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d4982c8278ca435f026d2d"
       }
     }
   ],
   "forecasts": [
     {
       "user_id": "65c5cc3f1a03da086dd45176",
-      "user_name": "Cерега Дж.",
-      "user_score": [],
-      "user_forecast": [],
+      "user_name": "Cерега Д.",
+      "user_score": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "forecast_points": 6,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e3e"
+        "$oid": "65d4982c8278ca435f026d2e"
       }
     },
     {
       "user_id": "65c5cc6c1a03da086dd4517c",
       "user_name": "Дима Р.",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        0,
+        2,
+        0,
+        4,
+        0,
+        1,
+        1,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e3f"
+        "$oid": "65d4982c8278ca435f026d2f"
       }
     },
     {
       "user_id": "65c5cc771a03da086dd4517e",
       "user_name": "Дима У.",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        0,
+        1,
+        0,
+        4,
+        0,
+        1,
+        1,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e40"
+        "$oid": "65d4982c8278ca435f026d30"
       }
     },
     {
       "user_id": "65c5ce651a03da086dd4518b",
       "user_name": "Дед",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        0,
+        1,
+        0,
+        4,
+        0,
+        1,
+        2,
+        4
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e41"
+        "$oid": "65d4982c8278ca435f026d31"
       }
     },
     {
       "user_id": "65c5ce7b1a03da086dd4518f",
       "user_name": "Антоха",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        2,
+        1,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e42"
+        "$oid": "65d4982c8278ca435f026d32"
       }
     },
     {
       "user_id": "65c5ce7f1a03da086dd45191",
       "user_name": "Шура",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e43"
+        "$oid": "65d4982c8278ca435f026d33"
       }
     },
     {
       "user_id": "65c5ce891a03da086dd45195",
       "user_name": "Кир",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        8,
+        2,
+        0,
+        0,
+        2,
+        4,
+        1,
+        0
+      ],
+      "forecast_points": 17,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e44"
+        "$oid": "65d4982c8278ca435f026d34"
       }
     },
     {
       "user_id": "65c5ce921a03da086dd45197",
       "user_name": "Лёха Р.",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        4,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e45"
+        "$oid": "65d4982c8278ca435f026d35"
       }
     },
     {
       "user_id": "65cf17576073ac0823270d42",
       "user_name": "Намаз",
-      "user_score": [],
-      "user_forecast": [],
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
       "_id": {
-        "$oid": "65cf52c4aeabc06232429e46"
+        "$oid": "65d4982c8278ca435f026d36"
       }
     }
   ],
@@ -388,10 +847,10 @@
     {
       "user_id": "65c5cc3f1a03da086dd45176",
       "user_name": "Cерега Дж.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 29,
+      "exact": 2,
+      "difference": 5,
+      "outcome": 9,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d5"
       }
@@ -399,10 +858,10 @@
     {
       "user_id": "65c5cc6c1a03da086dd4517c",
       "user_name": "Дима Р.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 30,
+      "exact": 3,
+      "difference": 4,
+      "outcome": 9,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d6"
       }
@@ -410,10 +869,10 @@
     {
       "user_id": "65c5cc771a03da086dd4517e",
       "user_name": "Дима У.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 39,
+      "exact": 4,
+      "difference": 5,
+      "outcome": 9,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d7"
       }
@@ -421,10 +880,10 @@
     {
       "user_id": "65c5ce651a03da086dd4518b",
       "user_name": "Дед",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 38,
+      "exact": 4,
+      "difference": 5,
+      "outcome": 10,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d8"
       }
@@ -432,10 +891,10 @@
     {
       "user_id": "65c5ce7b1a03da086dd4518f",
       "user_name": "Антоха",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 36,
+      "exact": 4,
+      "difference": 3,
+      "outcome": 8,
       "_id": {
         "$oid": "65cf243595f9386a8094c2d9"
       }
@@ -443,10 +902,10 @@
     {
       "user_id": "65c5ce7f1a03da086dd45191",
       "user_name": "Шура",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 34,
+      "exact": 4,
+      "difference": 6,
+      "outcome": 5,
       "_id": {
         "$oid": "65cf243595f9386a8094c2da"
       }
@@ -454,10 +913,10 @@
     {
       "user_id": "65c5ce891a03da086dd45195",
       "user_name": "Кир",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 46,
+      "exact": 4,
+      "difference": 6,
+      "outcome": 8,
       "_id": {
         "$oid": "65cf243595f9386a8094c2db"
       }
@@ -465,10 +924,10 @@
     {
       "user_id": "65c5ce921a03da086dd45197",
       "user_name": "Лёха Р.",
-      "forecast_points": 0,
-      "exact": 0,
-      "difference": 0,
-      "outcome": 0,
+      "forecast_points": 35,
+      "exact": 1,
+      "difference": 9,
+      "outcome": 8,
       "_id": {
         "$oid": "65cf243595f9386a8094c2dc"
       }
@@ -476,10 +935,4546 @@
     {
       "user_id": "65cf17576073ac0823270d42",
       "user_name": "Намаз",
-      "forecast_points": 0,
-      "exact": 0,
+      "forecast_points": 36,
+      "exact": 6,
       "difference": 0,
-      "outcome": 0,
+      "outcome": 8,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d875a7b079b17ab8047fe3"
+  },
+  "tour_number": 2,
+  "matches": [
+    {
+      "teams": [
+        "Хольштайн",
+        "Санкт-Паули"
+      ],
+      "score1": 3,
+      "score2": 4,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fe4"
+      }
+    },
+    {
+      "teams": [
+        "Лидс",
+        "Лестер"
+      ],
+      "score1": 3,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fe5"
+      }
+    },
+    {
+      "teams": [
+        "Черно Море",
+        "ЦСКА София"
+      ],
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
+      "is_double": true,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fe6"
+      }
+    },
+    {
+      "teams": [
+        "Бавария",
+        "Лейпциг"
+      ],
+      "score1": 2,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fe7"
+      }
+    },
+    {
+      "teams": [
+        "Ланс",
+        "Монако"
+      ],
+      "score1": 2,
+      "score2": 3,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fe8"
+      }
+    },
+    {
+      "teams": [
+        "Брюгге",
+        "Андерлехт"
+      ],
+      "score1": 1,
+      "score2": 2,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fe9"
+      }
+    },
+    {
+      "teams": [
+        "Бетис",
+        "Атлетик"
+      ],
+      "score1": 3,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fea"
+      }
+    },
+    {
+      "teams": [
+        "Милан",
+        "Аталанта"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047feb"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 0,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fec"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fed"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        0,
+        0,
+        0,
+        4,
+        2,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 6,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fee"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        2
+      ],
+      "forecast_points": 6,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047fef"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047ff0"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        2,
+        0,
+        4,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 0,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047ff1"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        4
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047ff2"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047ff3"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [
+        2,
+        0,
+        0,
+        4,
+        2,
+        4,
+        0,
+        0
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65d875a7b079b17ab8047ff4"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "forecast_points": 29,
+      "exact": 2,
+      "difference": 5,
+      "outcome": 9,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d5"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "forecast_points": 39,
+      "exact": 5,
+      "difference": 4,
+      "outcome": 10,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d6"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "forecast_points": 45,
+      "exact": 5,
+      "difference": 6,
+      "outcome": 9,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d7"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "forecast_points": 44,
+      "exact": 5,
+      "difference": 6,
+      "outcome": 10,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d8"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "forecast_points": 38,
+      "exact": 4,
+      "difference": 4,
+      "outcome": 8,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d9"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "forecast_points": 41,
+      "exact": 4,
+      "difference": 8,
+      "outcome": 6,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2da"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "forecast_points": 54,
+      "exact": 5,
+      "difference": 7,
+      "outcome": 9,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2db"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "forecast_points": 39,
+      "exact": 2,
+      "difference": 9,
+      "outcome": 8,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dc"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "forecast_points": 48,
+      "exact": 8,
+      "difference": 2,
+      "outcome": 8,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e07e9f7564a9fe6a0c90e4"
+  },
+  "tour_number": 3,
+  "matches": [
+    {
+      "teams": [
+        "Фрайбург",
+        "Бавария"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90e5"
+      }
+    },
+    {
+      "teams": [
+        "Монако",
+        "ПСЖ"
+      ],
+      "score1": 0,
+      "score2": 0,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90e6"
+      }
+    },
+    {
+      "teams": [
+        "Сгола",
+        "Жрински"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90e7"
+      }
+    },
+    {
+      "teams": [
+        "Нефтчи",
+        "Карабах"
+      ],
+      "score1": 1,
+      "score2": 4,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90e8"
+      }
+    },
+    {
+      "teams": [
+        "Сити",
+        "Юнайтед"
+      ],
+      "score1": 3,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90e9"
+      }
+    },
+    {
+      "teams": [
+        "Шахтер",
+        "Кривбас"
+      ],
+      "score1": 5,
+      "score2": 2,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90ea"
+      }
+    },
+    {
+      "teams": [
+        "Наполи",
+        "Ювентус"
+      ],
+      "score1": 2,
+      "score2": 1,
+      "result": "1",
+      "is_double": true,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90eb"
+      }
+    },
+    {
+      "teams": [
+        "Атлетик",
+        "Барселона"
+      ],
+      "score1": 0,
+      "score2": 0,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90ec"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90ed"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        0,
+        0,
+        4,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90ee"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        0,
+        0,
+        4,
+        1,
+        1,
+        1,
+        8,
+        0
+      ],
+      "forecast_points": 15,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90ef"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        8,
+        2
+      ],
+      "forecast_points": 14,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90f0"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        8,
+        2
+      ],
+      "forecast_points": 14,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90f1"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        0,
+        0,
+        4,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90f2"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        2
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90f3"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        0,
+        0,
+        0,
+        1,
+        4,
+        0,
+        0,
+        2
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90f4"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e07e9f7564a9fe6a0c90f5"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "forecast_points": 31,
+      "exact": 2,
+      "difference": 5,
+      "outcome": 11,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d5"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "forecast_points": 46,
+      "exact": 6,
+      "difference": 5,
+      "outcome": 11,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d6"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "forecast_points": 60,
+      "exact": 7,
+      "difference": 6,
+      "outcome": 12,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d7"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "forecast_points": 58,
+      "exact": 6,
+      "difference": 8,
+      "outcome": 12,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d8"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "forecast_points": 52,
+      "exact": 5,
+      "difference": 6,
+      "outcome": 10,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d9"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "forecast_points": 48,
+      "exact": 5,
+      "difference": 8,
+      "outcome": 9,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2da"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "forecast_points": 59,
+      "exact": 5,
+      "difference": 8,
+      "outcome": 12,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2db"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "forecast_points": 46,
+      "exact": 3,
+      "difference": 10,
+      "outcome": 9,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dc"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "forecast_points": 52,
+      "exact": 9,
+      "difference": 2,
+      "outcome": 8,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e6ae92ec2345975a5d8b99"
+  },
+  "tour_number": 4,
+  "matches": [
+    {
+      "teams": [
+        "Бавария",
+        "Лацио"
+      ],
+      "score1": 3,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8b9a"
+      }
+    },
+    {
+      "teams": [
+        "Сосьедад",
+        "ПСЖ"
+      ],
+      "score1": 1,
+      "score2": 2,
+      "result": "2",
+      "is_double": true,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8b9b"
+      }
+    },
+    {
+      "teams": [
+        "Мадрид",
+        "Лейпциг"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8b9c"
+      }
+    },
+    {
+      "teams": [
+        "Сити",
+        "Копенгаген"
+      ],
+      "score1": 3,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8b9d"
+      }
+    },
+    {
+      "teams": [
+        "Рома",
+        "Брайтон"
+      ],
+      "score1": 4,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8b9e"
+      }
+    },
+    {
+      "teams": [
+        "Спарта",
+        "Ливерпуль"
+      ],
+      "score1": 1,
+      "score2": 5,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8b9f"
+      }
+    },
+    {
+      "teams": [
+        "Карабах",
+        "Байер"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba0"
+      }
+    },
+    {
+      "teams": [
+        "Марсель",
+        "Вильярреал"
+      ],
+      "score1": 4,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba1"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [
+        1,
+        4,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba2"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        4,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 6,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 4,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba3"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        1,
+        8,
+        0,
+        4,
+        1,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 16,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba4"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba5"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba6"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        0,
+        8,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba7"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        1,
+        2,
+        0,
+        4,
+        1,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 2,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba8"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8ba9"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [
+        1,
+        8,
+        0,
+        4,
+        1,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 16,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 2,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65e6ae92ec2345975a5d8baa"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "forecast_points": 39,
+      "exact": 2,
+      "difference": 7,
+      "outcome": 13,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d5"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "forecast_points": 52,
+      "exact": 7,
+      "difference": 5,
+      "outcome": 13,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d6"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "forecast_points": 76,
+      "exact": 9,
+      "difference": 6,
+      "outcome": 16,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d7"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "forecast_points": 62,
+      "exact": 6,
+      "difference": 8,
+      "outcome": 16,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d8"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "forecast_points": 57,
+      "exact": 5,
+      "difference": 6,
+      "outcome": 15,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d9"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "forecast_points": 60,
+      "exact": 6,
+      "difference": 8,
+      "outcome": 13,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2da"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "forecast_points": 68,
+      "exact": 6,
+      "difference": 8,
+      "outcome": 16,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2db"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "forecast_points": 51,
+      "exact": 3,
+      "difference": 11,
+      "outcome": 12,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dc"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "forecast_points": 68,
+      "exact": 11,
+      "difference": 2,
+      "outcome": 12,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65eb53ba1cdfdece2173f365"
+  },
+  "tour_number": 5,
+  "matches": [
+    {
+      "teams": [
+        "Омония",
+        "АЕК"
+      ],
+      "score1": 0,
+      "score2": 1,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f366"
+      }
+    },
+    {
+      "teams": [
+        "ЛАСК",
+        "Зальцбург"
+      ],
+      "score1": 0,
+      "score2": 1,
+      "result": "2",
+      "is_double": true,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f367"
+      }
+    },
+    {
+      "teams": [
+        "Звезда",
+        "Партизан"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f368"
+      }
+    },
+    {
+      "teams": [
+        "Рапид",
+        "ФКСБ"
+      ],
+      "score1": 4,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f369"
+      }
+    },
+    {
+      "teams": [
+        "Фехервар",
+        "Ференцварош"
+      ],
+      "score1": 0,
+      "score2": 2,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f36a"
+      }
+    },
+    {
+      "teams": [
+        "Ливерпуль",
+        "Сити"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f36b"
+      }
+    },
+    {
+      "teams": [
+        "Ювентус",
+        "Аталанта"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f36c"
+      }
+    },
+    {
+      "teams": [
+        "Витория",
+        "Спарта"
+      ],
+      "score1": 4,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f36d"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 6,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f36e"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        4,
+        2,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f36f"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f370"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f371"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        2,
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "forecast_points": 10,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f372"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f373"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        0,
+        4,
+        0,
+        0,
+        4,
+        0,
+        2,
+        0
+      ],
+      "forecast_points": 10,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f374"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        0,
+        4,
+        0,
+        0,
+        4,
+        4,
+        2,
+        0
+      ],
+      "forecast_points": 14,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f375"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [
+        2,
+        4,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65eb53ba1cdfdece2173f376"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "forecast_points": 45,
+      "exact": 2,
+      "difference": 8,
+      "outcome": 16,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d5"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "forecast_points": 60,
+      "exact": 8,
+      "difference": 7,
+      "outcome": 13,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d6"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "forecast_points": 81,
+      "exact": 9,
+      "difference": 7,
+      "outcome": 17,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d7"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "forecast_points": 67,
+      "exact": 6,
+      "difference": 9,
+      "outcome": 18,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d8"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "forecast_points": 67,
+      "exact": 6,
+      "difference": 8,
+      "outcome": 15,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d9"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "forecast_points": 64,
+      "exact": 6,
+      "difference": 9,
+      "outcome": 15,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2da"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "forecast_points": 78,
+      "exact": 7,
+      "difference": 10,
+      "outcome": 16,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2db"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "forecast_points": 65,
+      "exact": 5,
+      "difference": 13,
+      "outcome": 12,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dc"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "forecast_points": 76,
+      "exact": 11,
+      "difference": 4,
+      "outcome": 14,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65efe47b1cdfdece21742264"
+  },
+  "tour_number": 6,
+  "matches": [
+    {
+      "teams": [
+        "Арсенал",
+        "Порту"
+      ],
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742265"
+      }
+    },
+    {
+      "teams": [
+        "Барселона",
+        "Наполи"
+      ],
+      "score1": 3,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742266"
+      }
+    },
+    {
+      "teams": [
+        "Боруссия",
+        "ПСВ"
+      ],
+      "score1": 2,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742267"
+      }
+    },
+    {
+      "teams": [
+        "Атлетико",
+        "Интер"
+      ],
+      "score1": 2,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742268"
+      }
+    },
+    {
+      "teams": [
+        "Рейнджерс",
+        "Бенфика"
+      ],
+      "score1": 0,
+      "score2": 1,
+      "result": "2",
+      "is_double": true,
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742269"
+      }
+    },
+    {
+      "teams": [
+        "Вест Хэм",
+        "Фрайбург"
+      ],
+      "score1": 5,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece2174226a"
+      }
+    },
+    {
+      "teams": [
+        "Аталанта",
+        "Спортинг"
+      ],
+      "score1": 2,
+      "score2": 1,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece2174226b"
+      }
+    },
+    {
+      "teams": [
+        "Байер",
+        "Карабах"
+      ],
+      "score1": 3,
+      "score2": 2,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65efe47b1cdfdece2174226c"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [
+        1,
+        2,
+        4,
+        0,
+        0,
+        0,
+        4,
+        1
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece2174226d"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        1,
+        4,
+        2,
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece2174226e"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        1,
+        1,
+        1,
+        0,
+        4,
+        1,
+        2,
+        1
+      ],
+      "forecast_points": 11,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece2174226f"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        2,
+        0,
+        0,
+        0,
+        4,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742270"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        1,
+        0,
+        1,
+        0,
+        4,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742271"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        1,
+        1,
+        1,
+        0,
+        4,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 0,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742272"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        1,
+        1,
+        4,
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      "forecast_points": 11,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742273"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 4,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742274"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        0,
+        2
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65efe47b1cdfdece21742275"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "forecast_points": 57,
+      "exact": 4,
+      "difference": 9,
+      "outcome": 18,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d5"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "forecast_points": 72,
+      "exact": 9,
+      "difference": 9,
+      "outcome": 15,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d6"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "forecast_points": 92,
+      "exact": 9,
+      "difference": 9,
+      "outcome": 22,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d7"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "forecast_points": 75,
+      "exact": 6,
+      "difference": 11,
+      "outcome": 20,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d8"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "forecast_points": 75,
+      "exact": 6,
+      "difference": 9,
+      "outcome": 19,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d9"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "forecast_points": 73,
+      "exact": 6,
+      "difference": 10,
+      "outcome": 20,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2da"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "forecast_points": 89,
+      "exact": 8,
+      "difference": 11,
+      "outcome": 19,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2db"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "forecast_points": 69,
+      "exact": 5,
+      "difference": 13,
+      "outcome": 16,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dc"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "forecast_points": 85,
+      "exact": 11,
+      "difference": 6,
+      "outcome": 18,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f43bd71cdfdece21743a22"
+  },
+  "tour_number": 7,
+  "matches": [
+    {
+      "teams": [
+        "Сити",
+        "Ньюкасл"
+      ],
+      "score1": 2,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a23"
+      }
+    },
+    {
+      "teams": [
+        "Брест",
+        "Лилль"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a24"
+      }
+    },
+    {
+      "teams": [
+        "Антверпен",
+        "УСЖ"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": true,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a25"
+      }
+    },
+    {
+      "teams": [
+        "Юнайтед",
+        "Ливерпуль"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a26"
+      }
+    },
+    {
+      "teams": [
+        "Трабзонспор",
+        "Фенербахче"
+      ],
+      "score1": 2,
+      "score2": 3,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a27"
+      }
+    },
+    {
+      "teams": [
+        "ПСВ",
+        "Твенте"
+      ],
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a28"
+      }
+    },
+    {
+      "teams": [
+        "Интер",
+        "Наполи"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a29"
+      }
+    },
+    {
+      "teams": [
+        "Атлетико",
+        "Барселона"
+      ],
+      "score1": 0,
+      "score2": 3,
+      "result": "2",
+      "is_double": false,
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a2a"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a2b"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        2,
+        4,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "forecast_points": 10,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a2c"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        2,
+        0,
+        8,
+        0,
+        2,
+        2,
+        0,
+        1
+      ],
+      "forecast_points": 15,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a2d"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        2,
+        4,
+        8,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "forecast_points": 19,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a2e"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a2f"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        1
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a30"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        1,
+        0,
+        8,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 11,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a31"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        1,
+        4,
+        4,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "forecast_points": 13,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a32"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [
+        4,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 2,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "_id": {
+        "$oid": "65f43bd71cdfdece21743a33"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Дж.",
+      "forecast_points": 59,
+      "exact": 4,
+      "difference": 9,
+      "outcome": 20,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d5"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "forecast_points": 82,
+      "exact": 10,
+      "difference": 12,
+      "outcome": 15,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d6"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "forecast_points": 107,
+      "exact": 10,
+      "difference": 12,
+      "outcome": 23,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d7"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "forecast_points": 94,
+      "exact": 8,
+      "difference": 14,
+      "outcome": 21,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d8"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "forecast_points": 83,
+      "exact": 7,
+      "difference": 11,
+      "outcome": 19,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2d9"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "forecast_points": 78,
+      "exact": 6,
+      "difference": 11,
+      "outcome": 23,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2da"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "forecast_points": 100,
+      "exact": 9,
+      "difference": 11,
+      "outcome": 22,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2db"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "forecast_points": 82,
+      "exact": 6,
+      "difference": 16,
+      "outcome": 17,
+      "_id": {
+        "$oid": "65cf243595f9386a8094c2dc"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "forecast_points": 92,
+      "exact": 12,
+      "difference": 7,
+      "outcome": 19,
       "_id": {
         "$oid": "65cf243595f9386a8094c2dd"
       }

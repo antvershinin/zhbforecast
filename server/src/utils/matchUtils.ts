@@ -29,8 +29,10 @@ class MatchUtils {
           forecasts.findIndex((el) => el.user_id === decoded._id)
         );
 
-        const filtered = forecasts.map((el) => {
-          el.user_forecast.length === 0;
+        const filtered = [];
+
+        forecasts.map((el) => {
+          if (el.user_forecast.length === 0) filtered.push(el);
         });
 
         if (!filtered.length) {
@@ -39,6 +41,8 @@ class MatchUtils {
           return { tour: { table, matches } };
         } else if (forecasts[index].user_forecast.length === 0) {
           return { tour: { table, matches, canMakeForecast: true } };
+        } else if (forecasts[index].user_forecast.length !== 0) {
+          return { tour: { table, matches, forecasts: [forecasts[index]] } };
         } else {
           return { tour: { table, matches } };
         }
@@ -151,8 +155,10 @@ class MatchUtils {
         }
       });
 
-      const filtered = forecasts.map((el) => {
-        el.user_forecast.length === 0;
+      const filtered = [];
+
+      forecasts.map((el) => {
+        if (el.user_forecast.length === 0) filtered.push(el);
       });
 
       if (!filtered.length) {
@@ -168,6 +174,7 @@ class MatchUtils {
         },
         { new: true }
       );
+
       return result;
     } catch (e) {
       console.log(e);

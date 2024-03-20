@@ -1,29 +1,33 @@
 .match {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    border: 1px solid;
-    border-radius: 5px;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+
+  border-radius: 5px;
+  justify-content: space-between;
 }
 
 .match_double {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: rgb(16, 247, 16);
+  width: 350px;
+  justify-content: space-between;
+
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+
+  border-radius: 5px;
+  background-color: rgb(16, 247, 16);
 }
 
 .team_name {
-    width: 130px;
-    display: flex;
-    align-items: center;
+  width: 145px;
+  display: flex;
+  align-items: center;
 }
 
 .score {
-    font-family: "Mitr";
-    font-size: 400;
+  font-family: "Mitr";
+  font-size: 400;
+  width: 20px;
 }

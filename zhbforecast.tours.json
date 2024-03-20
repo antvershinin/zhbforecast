@@ -200,4 +200,2622 @@
     }
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ded986021f83ddf4850d05"
+  },
+  "tour_number": 19,
+  "matches": [
+    {
+      "teams": [
+        "rost",
+        "kryl"
+      ],
+      "teams_names": [
+        "Ростов",
+        "Крылья"
+      ],
+      "score1": 2,
+      "score2": 0,
+      "result": "1",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d06"
+      }
+    },
+    {
+      "teams": [
+        "cska",
+        "oren"
+      ],
+      "teams_names": [
+        "ЦСКА",
+        "Оренбург"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d07"
+      }
+    },
+    {
+      "teams": [
+        "kras",
+        "rub"
+      ],
+      "teams_names": [
+        "Краснодар",
+        "Рубин"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d08"
+      }
+    },
+    {
+      "teams": [
+        "akhm",
+        "ural"
+      ],
+      "teams_names": [
+        "Ахмат",
+        "Урал"
+      ],
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d09"
+      }
+    },
+    {
+      "teams": [
+        "zen",
+        "spm"
+      ],
+      "teams_names": [
+        "Зенит",
+        "Спартак"
+      ],
+      "score1": 0,
+      "score2": 0,
+      "result": "X",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d0a"
+      }
+    },
+    {
+      "teams": [
+        "pari",
+        "fak"
+      ],
+      "teams_names": [
+        "Пари НН",
+        "Факел"
+      ],
+      "score1": 1,
+      "score2": 1,
+      "result": "X",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d0b"
+      }
+    },
+    {
+      "teams": [
+        "dyn",
+        "loko"
+      ],
+      "teams_names": [
+        "Динамо",
+        "Локомотив"
+      ],
+      "score1": 2,
+      "score2": 1,
+      "result": "1",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d0c"
+      }
+    },
+    {
+      "teams": [
+        "balt",
+        "soch"
+      ],
+      "teams_names": [
+        "Балтика",
+        "Сочи"
+      ],
+      "score1": 0,
+      "score2": 0,
+      "result": "X",
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d0d"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "user_score": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 0,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d0e"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        5,
+        0
+      ],
+      "forecast_points": 10,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 0,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d0f"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "user_doubleMatch": 1,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d10"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "forecast_points": 3,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 0,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 1,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d11"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 0,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "user_doubleMatch": 2,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d12"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 2,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d13"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        5,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 3,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d14"
+      }
+    },
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Серёга Д.",
+      "user_score": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        5,
+        5,
+        0
+      ],
+      "forecast_points": 20,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "user_doubleMatch": 3,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d15"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 0,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 4,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d16"
+      }
+    },
+    {
+      "user_id": "65c5cc641a03da086dd4517a",
+      "user_name": "Ваня",
+      "user_score": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 4,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d17"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 0,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        }
+      ],
+      "user_doubleMatch": 5,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d18"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        1,
+        0,
+        2,
+        5,
+        0,
+        4,
+        0,
+        0
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 0,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        }
+      ],
+      "user_doubleMatch": 5,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d19"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "user_score": [
+        0,
+        0,
+        0,
+        5,
+        0,
+        2,
+        10,
+        2
+      ],
+      "forecast_points": 19,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 0,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "user_doubleMatch": 6,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d1a"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "user_score": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 10,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        }
+      ],
+      "user_doubleMatch": 6,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d1b"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "user_score": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 4,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 7,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d1c"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        5,
+        5,
+        4
+      ],
+      "forecast_points": 16,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        }
+      ],
+      "user_doubleMatch": 7,
+      "_id": {
+        "$oid": "65ded986021f83ddf4850d1d"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "points": 17,
+      "wins": 5,
+      "draws": 2,
+      "losses": 12,
+      "forecast_points": 171,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5b"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "points": 20,
+      "wins": 6,
+      "draws": 2,
+      "losses": 11,
+      "forecast_points": 138,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5c"
+      }
+    },
+    {
+      "user_id": "65c5cc641a03da086dd4517a",
+      "user_name": "Ваня",
+      "points": 21,
+      "wins": 6,
+      "draws": 3,
+      "losses": 10,
+      "forecast_points": 152,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5d"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 7,
+      "forecast_points": 185,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5e"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "points": 25,
+      "wins": 8,
+      "draws": 1,
+      "losses": 10,
+      "forecast_points": 157,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5f"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "points": 26,
+      "wins": 8,
+      "draws": 2,
+      "losses": 9,
+      "forecast_points": 200,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd60"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "points": 28,
+      "wins": 9,
+      "draws": 1,
+      "losses": 9,
+      "forecast_points": 162,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd61"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 7,
+      "forecast_points": 167,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd62"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "points": 26,
+      "wins": 8,
+      "draws": 2,
+      "losses": 9,
+      "forecast_points": 148,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd63"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "points": 30,
+      "wins": 9,
+      "draws": 3,
+      "losses": 7,
+      "forecast_points": 177,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd64"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "points": 25,
+      "wins": 8,
+      "draws": 1,
+      "losses": 10,
+      "forecast_points": 189,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd65"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "points": 34,
+      "wins": 11,
+      "draws": 1,
+      "losses": 7,
+      "forecast_points": 210,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd66"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "points": 31,
+      "wins": 10,
+      "draws": 1,
+      "losses": 8,
+      "forecast_points": 181,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd67"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "points": 26,
+      "wins": 8,
+      "draws": 2,
+      "losses": 9,
+      "forecast_points": 172,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd68"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "points": 37,
+      "wins": 12,
+      "draws": 1,
+      "losses": 6,
+      "forecast_points": 195,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd69"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 7,
+      "forecast_points": 174,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd6a"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e7fa90c7fa228e7bed88b9"
+  },
+  "tour_number": 20,
+  "matches": [
+    {
+      "teams": [
+        "kryl",
+        "cska"
+      ],
+      "teams_names": [
+        "Крылья",
+        "ЦСКА"
+      ],
+      "score1": 0,
+      "score2": 2,
+      "result": "2",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88ba"
+      }
+    },
+    {
+      "teams": [
+        "rost",
+        "kras"
+      ],
+      "teams_names": [
+        "Ростов",
+        "Краснодар"
+      ],
+      "score1": 2,
+      "score2": 1,
+      "result": "1",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88bb"
+      }
+    },
+    {
+      "teams": [
+        "ural",
+        "zen"
+      ],
+      "teams_names": [
+        "Урал",
+        "Зенит"
+      ],
+      "score1": 1,
+      "score2": 4,
+      "result": "2",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88bc"
+      }
+    },
+    {
+      "teams": [
+        "rub",
+        "pari"
+      ],
+      "teams_names": [
+        "Рубин",
+        "Пари"
+      ],
+      "score1": 0,
+      "score2": 1,
+      "result": "2",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88bd"
+      }
+    },
+    {
+      "teams": [
+        "dyn",
+        "akhm"
+      ],
+      "teams_names": [
+        "Динамо",
+        "Ахмат"
+      ],
+      "score1": 2,
+      "score2": 0,
+      "result": "1",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88be"
+      }
+    },
+    {
+      "teams": [
+        "oren",
+        "balt"
+      ],
+      "teams_names": [
+        "Оренбург",
+        "Балтика"
+      ],
+      "score1": 1,
+      "score2": 0,
+      "result": "1",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88bf"
+      }
+    },
+    {
+      "teams": [
+        "loko",
+        "soch"
+      ],
+      "teams_names": [
+        "Локомотив",
+        "Сочи"
+      ],
+      "score1": 2,
+      "score2": 2,
+      "result": "X",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c0"
+      }
+    },
+    {
+      "teams": [
+        "spm",
+        "fak"
+      ],
+      "teams_names": [
+        "Спартак",
+        "Факел"
+      ],
+      "score1": 0,
+      "score2": 2,
+      "result": "2",
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c1"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 2,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 0,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c2"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "user_score": [
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 5,
+      "user_forecast": [
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 0,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c3"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "user_score": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 1,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c4"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [
+        1,
+        0,
+        1,
+        0,
+        5,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 12,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 1,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c5"
+      }
+    },
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Серёга Дж.",
+      "user_score": [
+        0,
+        0,
+        2,
+        0,
+        5,
+        2,
+        0,
+        0
+      ],
+      "forecast_points": 9,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 2,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c6"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "user_score": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 10,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 2,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c7"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [
+        1,
+        0,
+        2,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 3,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c8"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "user_score": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 3,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 3,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88c9"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "user_score": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 1,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 4,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88ca"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [
+        1,
+        0,
+        1,
+        0,
+        10,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 17,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 4,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88cb"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [
+        0,
+        5,
+        1,
+        0,
+        1,
+        10,
+        0,
+        0
+      ],
+      "forecast_points": 17,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 5,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88cc"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "user_score": [
+        0,
+        0,
+        1,
+        0,
+        5,
+        2,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 5,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88cd"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "user_score": [
+        0,
+        0,
+        2,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 9,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 6,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88ce"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [
+        0,
+        0,
+        1,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 6,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 6,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88cf"
+      }
+    },
+    {
+      "user_id": "65c5cc641a03da086dd4517a",
+      "user_name": "Ваня",
+      "user_score": [
+        0,
+        0,
+        2,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "forecast_points": 7,
+      "user_forecast": [
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 0,
+          "score2": 3,
+          "result": "2"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 7,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88d0"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        5,
+        0,
+        0
+      ],
+      "forecast_points": 8,
+      "user_forecast": [
+        {
+          "score1": 1,
+          "score2": 1,
+          "result": "X"
+        },
+        {
+          "score1": 2,
+          "score2": 2,
+          "result": "X"
+        },
+        {
+          "score1": 0,
+          "score2": 2,
+          "result": "2"
+        },
+        {
+          "score1": 2,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        },
+        {
+          "score1": 1,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 2,
+          "score2": 0,
+          "result": "1"
+        },
+        {
+          "score1": 3,
+          "score2": 1,
+          "result": "1"
+        }
+      ],
+      "user_doubleMatch": 7,
+      "_id": {
+        "$oid": "65e7fa90c7fa228e7bed88d1"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "points": 17,
+      "wins": 5,
+      "draws": 2,
+      "losses": 13,
+      "forecast_points": 180,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5b"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "points": 23,
+      "wins": 7,
+      "draws": 2,
+      "losses": 11,
+      "forecast_points": 145,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5c"
+      }
+    },
+    {
+      "user_id": "65c5cc641a03da086dd4517a",
+      "user_name": "Ваня",
+      "points": 21,
+      "wins": 6,
+      "draws": 3,
+      "losses": 11,
+      "forecast_points": 159,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5d"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 8,
+      "forecast_points": 187,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5e"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "points": 28,
+      "wins": 9,
+      "draws": 1,
+      "losses": 10,
+      "forecast_points": 174,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd5f"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "points": 26,
+      "wins": 8,
+      "draws": 2,
+      "losses": 10,
+      "forecast_points": 208,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd60"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "points": 31,
+      "wins": 10,
+      "draws": 1,
+      "losses": 9,
+      "forecast_points": 172,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd61"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "points": 32,
+      "wins": 10,
+      "draws": 2,
+      "losses": 8,
+      "forecast_points": 170,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd62"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "points": 29,
+      "wins": 9,
+      "draws": 2,
+      "losses": 9,
+      "forecast_points": 156,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd63"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "points": 30,
+      "wins": 9,
+      "draws": 3,
+      "losses": 8,
+      "forecast_points": 185,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd64"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "points": 25,
+      "wins": 8,
+      "draws": 1,
+      "losses": 11,
+      "forecast_points": 195,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd65"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "points": 37,
+      "wins": 12,
+      "draws": 1,
+      "losses": 7,
+      "forecast_points": 227,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd66"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "points": 31,
+      "wins": 10,
+      "draws": 1,
+      "losses": 9,
+      "forecast_points": 189,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd67"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "points": 29,
+      "wins": 9,
+      "draws": 2,
+      "losses": 9,
+      "forecast_points": 180,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd68"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "points": 40,
+      "wins": 13,
+      "draws": 1,
+      "losses": 6,
+      "forecast_points": 207,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd69"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "points": 35,
+      "wins": 11,
+      "draws": 2,
+      "losses": 7,
+      "forecast_points": 179,
+      "_id": {
+        "$oid": "65cc5cfba3a5385a951dfd6a"
+      }
+    }
+  ],
+  "__v": 0
 }]

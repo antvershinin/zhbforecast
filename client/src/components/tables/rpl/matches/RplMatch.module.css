@@ -1,14 +1,12 @@
 .match {
-  width: 175px;
+  width: 350px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 20px;
-  border: 1px solid;
-  border-radius: 5px;
 }
 
 .team_name {
-  width: 155px;
+  width: 145px;
   display: flex;
   align-items: center;
 }
@@ -16,4 +14,5 @@
 .score {
   font-family: "Mitr";
   font-size: 400;
+  width: 20px;
 }
