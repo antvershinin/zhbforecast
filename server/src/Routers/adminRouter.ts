@@ -12,3 +12,8 @@ adminRouter.put("/rpl/editscore", adminController.editScoreRPL);
 adminRouter.post("/euro/setmatches", adminController.setEUROMatches);
 
 adminRouter.put('/euro/editscore', adminController.editScoreEuro)
+
+adminRouter.post('/euro24/setmatches', adminController.setEuro24Matches)
+
+adminRouter.put('/euro24/editscore', adminController.editScoreEuro24)
+

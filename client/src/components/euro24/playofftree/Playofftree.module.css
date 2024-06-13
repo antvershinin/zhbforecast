@@ -1,0 +1,23 @@
+.bracketTop {
+    height: 30px;
+    width: 100px;
+    background-color:#b59410bd;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bracketBot {
+    height: 30px;
+    width: 100px;
+    background-color:silver;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

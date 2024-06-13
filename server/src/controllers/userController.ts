@@ -54,13 +54,14 @@ class UserController {
       const decoded = <{ _id: string }>jtw.decode(req.headers.authorization, {
         json:true
       });
+      if (decoded) {
       const { _id } = decoded;
       const user = await User.findById(_id);
       res.send({
         user_id : user._id,
         user_name : user.name,
         is_admin : user.is_admin
-      });
+      })};
     } catch (e) {
       console.log(e);
     }

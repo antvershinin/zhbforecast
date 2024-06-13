@@ -8,8 +8,9 @@ type Props = {
     user_forecast: [{ score1: number; score2: number }];
     forecast_points: number;
   };
-  double_match: number | undefined;
+  double_match?: number[];
 };
+
 
 export const ForecastRow: FC<Props> = (props) => {
   return (
@@ -22,7 +23,7 @@ export const ForecastRow: FC<Props> = (props) => {
               <div
                 key={index}
                 className={
-                  index === props.double_match
+                  props.double_match?.includes(index)
                     ? style.forecasts_double
                     : style.forecasts
                 }
@@ -40,7 +41,7 @@ export const ForecastRow: FC<Props> = (props) => {
               <div
                 key={index}
                 className={
-                  index === props.double_match
+                  props.double_match?.includes(index)
                     ? style.forecasts_double
                     : style.forecasts
                 }

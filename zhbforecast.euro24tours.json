@@ -1,0 +1,1042 @@
+[{
+  "_id": {
+    "$oid": "6666aff5e9610225f5e83be9"
+  },
+  "tour_number": 0,
+  "matches": [
+    {
+      "teams": [
+        "Германия",
+        "Шотландия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bea"
+      }
+    },
+    {
+      "teams": [
+        "Венгрия",
+        "Швейцария"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83beb"
+      }
+    },
+    {
+      "teams": [
+        "Испания",
+        "Хорватия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bec"
+      }
+    },
+    {
+      "teams": [
+        "Италия",
+        "Албания"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bed"
+      }
+    },
+    {
+      "teams": [
+        "Польша",
+        "Нидерланды"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bee"
+      }
+    },
+    {
+      "teams": [
+        "Словения",
+        "Дания"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bef"
+      }
+    },
+    {
+      "teams": [
+        "Сербия",
+        "Англия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf0"
+      }
+    },
+    {
+      "teams": [
+        "Румыния",
+        "Украина"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf1"
+      }
+    },
+    {
+      "teams": [
+        "Бельгия",
+        "Словакия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf2"
+      }
+    },
+    {
+      "teams": [
+        "Австрия",
+        "Франция"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf3"
+      }
+    },
+    {
+      "teams": [
+        "Турция",
+        "Грузия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf4"
+      }
+    },
+    {
+      "teams": [
+        "Португалия",
+        "Чехия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf5"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "D",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf6"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "B",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf7"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "D",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf8"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "A",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bf9"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "A",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bfa"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "A",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bfb"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "D",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bfc"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "B",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bfd"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "D",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bfe"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "B",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83bff"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "B",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c00"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "C",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c01"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "C",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c02"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "C",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c03"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "C",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c04"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "A",
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c05"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c06"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c07"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c08"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c09"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0a"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0b"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0c"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0d"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0e"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0f"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c10"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c11"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c12"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c13"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c14"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c15"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666afdb66be5f984223a99bd"
+  },
+  "tour_number": 1,
+  "matches": [
+    {
+      "teams": [
+        "Германия",
+        "Шотландия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99be"
+      }
+    },
+    {
+      "teams": [
+        "Венгрия",
+        "Швейцария"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99bf"
+      }
+    },
+    {
+      "teams": [
+        "Испания",
+        "Хорватия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c0"
+      }
+    },
+    {
+      "teams": [
+        "Италия",
+        "Албания"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c1"
+      }
+    },
+    {
+      "teams": [
+        "Польша",
+        "Нидерланжы"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c2"
+      }
+    },
+    {
+      "teams": [
+        "Словения",
+        "Дания"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c3"
+      }
+    },
+    {
+      "teams": [
+        "Сербия",
+        "Англия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c4"
+      }
+    },
+    {
+      "teams": [
+        "Румыния",
+        "Украина"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c5"
+      }
+    },
+    {
+      "teams": [
+        "Бельгия",
+        "Словакия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c6"
+      }
+    },
+    {
+      "teams": [
+        "Австрия",
+        "Франция"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c7"
+      }
+    },
+    {
+      "teams": [
+        "Турция",
+        "Грузия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c8"
+      }
+    },
+    {
+      "teams": [
+        "Португалия",
+        "Чехия"
+      ],
+      "score1": null,
+      "score2": null,
+      "result": "",
+      "is_double": false,
+      "_id": {
+        "$oid": "666afdb66be5f984223a99c9"
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TPR3",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99ca"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TPL0",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99cb"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BOTFIN",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99cc"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BTLSE",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99cd"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BTR2",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99ce"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TOPFIN",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99cf"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TPLSE",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d0"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BOTFIN",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d1"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BTR3",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d2"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BTL0",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d3"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TPR2",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d4"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TPRSE",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d5"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BTL1",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d6"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TPL1",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d7"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "BTRSE",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d8"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_score": [],
+      "user_forecast": [],
+      "user_euro24_progress": "TOPFIN",
+      "_id": {
+        "$oid": "666afdb66be5f984223a99d9"
+      }
+    }
+  ],
+  "table": [
+    {
+      "user_id": "65c5cc3f1a03da086dd45176",
+      "user_name": "Cерега Д.",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c06"
+      }
+    },
+    {
+      "user_id": "65c5cc511a03da086dd45178",
+      "user_name": "Лёня",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c07"
+      }
+    },
+    {
+      "user_id": "65c5cc6c1a03da086dd4517c",
+      "user_name": "Дима Р.",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c08"
+      }
+    },
+    {
+      "user_id": "65c5cc771a03da086dd4517e",
+      "user_name": "Дима У.",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c09"
+      }
+    },
+    {
+      "user_id": "65c5cc7b1a03da086dd45180",
+      "user_name": "Дима Д.",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0a"
+      }
+    },
+    {
+      "user_id": "65c5cc9f1a03da086dd45182",
+      "user_name": "Серёга П.",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0b"
+      }
+    },
+    {
+      "user_id": "65c5cca41a03da086dd45184",
+      "user_name": "Слава",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0c"
+      }
+    },
+    {
+      "user_id": "65c5ce651a03da086dd4518b",
+      "user_name": "Дед",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0d"
+      }
+    },
+    {
+      "user_id": "65c5ce731a03da086dd4518d",
+      "user_name": "Лёха К.",
+      "user_euro24_progress": "D",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0e"
+      }
+    },
+    {
+      "user_id": "65c5ce7b1a03da086dd4518f",
+      "user_name": "Антоха",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c0f"
+      }
+    },
+    {
+      "user_id": "65c5ce7f1a03da086dd45191",
+      "user_name": "Шура",
+      "user_euro24_progress": "B",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c10"
+      }
+    },
+    {
+      "user_id": "65c5ce851a03da086dd45193",
+      "user_name": "Паша",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c11"
+      }
+    },
+    {
+      "user_id": "65c5ce891a03da086dd45195",
+      "user_name": "Кир",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c12"
+      }
+    },
+    {
+      "user_id": "65c5ce921a03da086dd45197",
+      "user_name": "Лёха Р.",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c13"
+      }
+    },
+    {
+      "user_id": "65c5ce971a03da086dd45199",
+      "user_name": "Стас",
+      "user_euro24_progress": "C",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c14"
+      }
+    },
+    {
+      "user_id": "65cf17576073ac0823270d42",
+      "user_name": "Намаз",
+      "user_euro24_progress": "A",
+      "forecast_points": 0,
+      "exact": 0,
+      "difference": 0,
+      "outcome": 0,
+      "_id": {
+        "$oid": "6666aff5e9610225f5e83c15"
+      }
+    }
+  ],
+  "__v": 0
+}]

@@ -22,11 +22,12 @@ export interface IRPLMatch {
 }
 
 export interface IRPLForecasts {
+  user_id:string;
   user_name: string;
   user_score: [];
   user_forecast: [{ score1: number; score2: number }];
   forecast_points: number;
-  user_doubleMatch:number
+  user_doubleMatch: number;
 }
 
 interface IRPLTour {
@@ -35,6 +36,7 @@ interface IRPLTour {
     forecasts?: IRPLForecasts[];
     matches?: IRPLMatch[];
     table?: IRPLTable[];
+    missed_forecasts?: IRPLForecasts[]
   };
 }
 
@@ -51,13 +53,11 @@ export const RplPage = () => {
     getData();
   }, []);
 
- 
-
   return (
     <div style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'40px'}}>
       <div>
         {!data?.tour.table ? null : (
-          <RPLTable data={data.tour.table}/>
+          <RPLTable missed_forecasts={data.tour.missed_forecasts} data={data.tour.table}/>
         )}
       </div>
       <div>

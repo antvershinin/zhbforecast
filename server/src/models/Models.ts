@@ -60,12 +60,14 @@ const EurotourSchema = new mongoose.Schema({
       user_score: [Number],
       forecast_points: Number,
       user_forecast: [],
+      user_euro24_progress : String
     },
   ],
   table: [
     {
       user_id: String,
       user_name: String,
+      user_euro24_progress : String,
       forecast_points: { type: Number, default: 0 },
       exact: { type: Number, default: 0 },
       difference: { type: Number, default: 0 },
@@ -79,10 +81,13 @@ const UserSchema = new mongoose.Schema({
   login: { type: String, required: true },
   password: { type: String, required: true },
   euro: Boolean,
-  is_admin : Boolean
+  is_admin : Boolean,
+  euro24: String
 });
+
 
 export const Tour = mongoose.model("tours", TourSchema);
 export const Eurotour = mongoose.model("eurotours", EurotourSchema);
 export const Team = mongoose.model("teams", TeamSchema);
 export const User = mongoose.model("users", UserSchema);
+export const Euro24Tour = mongoose.model('euro24tours', EurotourSchema)

@@ -46,6 +46,24 @@ class AdminController {
       console.log(e)
     }
   }
+
+  async setEuro24Matches(req:Request, res:Response) {
+    try {
+    const data = await adminUtils.setEURO24Matches(req.body)
+    res.send(data)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  async editScoreEuro24(req:Request, res:Response) {
+    try {
+      const data = await adminUtils.editScoreEuro24(req.body)
+      res.send(data)
+    } catch (e) {
+      console.log(e)
+    }
+  }
 }
 
 export default new AdminController();

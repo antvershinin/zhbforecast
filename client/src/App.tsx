@@ -7,6 +7,7 @@ import { RplPage } from "./pages/rplpage/RplPage";
 import { Loader } from "./components/loader/Loader";
 import { EurocupPage } from "./pages/eurocuppage/EurocupPage";
 import { LoginPage } from "./pages/loginpage/LoginPage";
+import Euro24Page from "./pages/euro24/Euro24Page";
 
 const App: FC = () => {
   const { user, loginHandler, getmeHandler } = useAuth();
@@ -37,6 +38,7 @@ const App: FC = () => {
             <Route index element={<HomePage />} />
             <Route path="/rpl" element={<RplPage />} />
             <Route path="/euro" element={<EurocupPage />} />
+            <Route path="/euro24" element={<Euro24Page/>}/>
             <Route path="/login" element={<LoginPage/>}/>
             <Route path="*" element={<Navigate to="/" />} />
           </Route>

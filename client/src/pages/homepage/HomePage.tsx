@@ -1,5 +1,6 @@
 import rpl from "../../assets/rpl-logo.png";
 import euro from "../../assets/euro_logo.png";
+import euro24 from "../../assets/euro24_logo.png"
 import style from "./HomePage.module.css";
 import { useNavigate } from "react-router";
 
@@ -8,6 +9,9 @@ export const HomePage = () => {
 
   return (
     <div className={style.main}>
+      <div className={style.image_wrapper} onClick={()=>navigate('/euro24')}>
+      <img src={euro24} alt="EURO24" className={style.image} />
+      </div>
       <div className={style.image_wrapper} onClick={() => navigate("/rpl")}>
         <img src={rpl} alt="RPL" className={style.image} />
       </div>

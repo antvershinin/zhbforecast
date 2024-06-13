@@ -1,11 +1,12 @@
 import { Field, FieldArray, Form, Formik } from "formik";
 import { FC } from "react";
 import { IEuroMatch } from "../../pages/eurocuppage/EurocupPage";
-import { setEuroForecastsDB } from "../../api/matchesApi";
+import { setEuro24ForecastsDB, setEuroForecastsDB } from "../../api/matchesApi";
 import { useNavigate } from "react-router";
 
 type Props = {
   matches: IEuroMatch[];
+  euro24:boolean
 };
 
 export const EuroForecastForm: FC<Props> = (props) => {
@@ -15,7 +16,7 @@ export const EuroForecastForm: FC<Props> = (props) => {
 
   const handleSubmit = async (values: any) => {
     try {
-      const result = await setEuroForecastsDB(values.matches);
+      const result = props.euro24 ? await setEuro24ForecastsDB(values.matches) : await setEuroForecastsDB(values.matches);
       if (result === 200) {
         navigate("/home");
       }
@@ -46,8 +47,8 @@ export const EuroForecastForm: FC<Props> = (props) => {
                     <div
                       style={{
                         display: "flex",
-                        width: "350px",
-                        fontSize: "25px",
+                        width: "400px",
+                        fontSize: "20px",
                         fontFamily: "Mitr",
                         justifyContent: "center",
                       }}
@@ -57,19 +58,19 @@ export const EuroForecastForm: FC<Props> = (props) => {
                         style={{
                           display: "flex",
                           flexDirection: "row",
-                          gap: "20px",
+                          gap: "30px",
                         }}
                       >
                         <div
                           style={{
-                            width: "100px",
+                            width:"120px",
                           }}
                         >
                           <label htmlFor={`matches.${index}.team1`}>
                             {props.matches[index].teams[0]}
                           </label>
                         </div>
-                        <div style={{ width: "21px" }}>
+                        <div style={{ width: "20px" }}>
                           <Field
                             name={`matches.${index}.score1`}
                             type="number"
@@ -89,7 +90,7 @@ export const EuroForecastForm: FC<Props> = (props) => {
                             type="number"
                           />
                         </div>
-                        <div style={{ width: "100px" }}>
+                        <div style={{ width: "120px" }}>
                           <label htmlFor={`matches.${index + 1}.team2`}>
                             {props.matches[index].teams[1]}
                           </label>
@@ -102,15 +103,14 @@ export const EuroForecastForm: FC<Props> = (props) => {
             </FieldArray>
             <button
               style={{
-                backgroundColor: "red",
+                backgroundColor: "rgb(192, 164, 7)",
                 height: "50px",
                 fontSize: "20px",
-                color: "white",
                 borderRadius: "10px",
               }}
               type="submit"
             >
-              Отправить прогноз
+              Отправить
             </button>
           </Form>
         )}

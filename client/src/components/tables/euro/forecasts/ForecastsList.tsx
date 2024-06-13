@@ -4,7 +4,7 @@ import { ForecastRow } from "./ForecastRow";
 
 type Props = {
     forecasts : IEuroForecasts[]
-    double_match : number | undefined
+    double_match? : number[]
 }
 
 export const ForecastList :FC<Props> = (props) => {

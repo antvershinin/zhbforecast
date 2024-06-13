@@ -27,13 +27,33 @@ export interface IEuroForecasts {
   forecast_points: number;
 }
 
-interface ITour {
+export interface ITour {
   canMakeForecast?: boolean;
   tour: {
     forecasts: IEuroForecasts[];
     matches: IEuroMatch[];
     table: IEuroTable[];
+    tour_number: number
   };
+  playoffTable: {
+    qt?: [
+      IEuroTable[],
+      IEuroTable[],
+      IEuroTable[],
+      IEuroTable[],
+      IEuroTable[],
+      IEuroTable[],
+      IEuroTable[],
+      IEuroTable[]
+    ];
+    sm?: [IEuroTable[], IEuroTable[], IEuroTable[], IEuroTable[]];
+    fn?: [IEuroTable[], IEuroTable[]];
+  };
+  missed_forecasts? : [],
+  groupTable?: [IEuroTable[],IEuroTable[],IEuroTable[],IEuroTable[]],
+  sortedForecasts? : []
+  sortedTable?: []
+
 }
 
 export const EurocupPage = () => {
@@ -48,7 +68,8 @@ export const EurocupPage = () => {
     getData();
   }, []);
 
-  const doubleMatch = data?.tour.matches.findIndex((el) => el.is_double);
+  const doubleMatch : number[] = [] 
+  data?.tour.matches.map((el, index) => el.is_double && doubleMatch.push(index));
 
   return (
     <>
@@ -78,7 +99,7 @@ export const EurocupPage = () => {
           </div>
           <div>
             {!data.canMakeForecast ? null : (
-              <EuroForecastForm matches={data.tour.matches} />
+              <EuroForecastForm euro24={false} matches={data.tour.matches} />
             )}
           </div>
         </div>

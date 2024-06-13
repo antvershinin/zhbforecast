@@ -13,7 +13,6 @@ export const Header = () => {
  
     <div style={{fontSize:'35px'}}>
     {user ? user.user_name : <div onClick={()=>navigate('/login')} className={style.button}><p>Войти</p></div>}
-    
     </div>
     
     </div>;
