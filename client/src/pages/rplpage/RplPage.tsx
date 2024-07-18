@@ -13,12 +13,14 @@ export interface IRPLTable {
   draws: number;
   losses: number;
   forecast_points: number;
+  tours: number
 }
 
 export interface IRPLMatch {
   score1: number;
   score2: number;
   teams_names: [string, string];
+  _id:string
 }
 
 export interface IRPLForecasts {

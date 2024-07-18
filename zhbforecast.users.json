@@ -2,11 +2,11 @@
   "_id": {
     "$oid": "65c5cc3f1a03da086dd45176"
   },
-  "name": "Cерега Дж.",
+  "name": "Cерега Д.",
   "__v": 0,
   "login": "punkrock4intellectuals",
   "password": "p1N341",
-  "euro": true
+  "is_admin": false
 },
 {
   "_id": {
@@ -16,7 +16,7 @@
   "__v": 0,
   "login": "dinoelvotok",
   "password": "le412N2",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -26,7 +26,7 @@
   "__v": 0,
   "login": "spartach6363",
   "password": "i21d521",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -36,7 +36,7 @@
   "__v": 0,
   "login": "dmitry156",
   "password": "D132dg4",
-  "euro": true
+  "is_admin": false
 },
 {
   "_id": {
@@ -46,7 +46,7 @@
   "__v": 0,
   "login": "umnikov_live",
   "password": "5423Dgfh2",
-  "euro": true
+  "is_admin": true
 },
 {
   "_id": {
@@ -56,7 +56,7 @@
   "__v": 0,
   "login": "poofich",
   "password": "p251gfa",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -66,7 +66,7 @@
   "__v": 0,
   "login": "sergeypanikov",
   "password": "s99fha1",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -76,7 +76,7 @@
   "__v": 0,
   "login": "slavabob",
   "password": "s224KA7",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -86,7 +86,7 @@
   "__v": 0,
   "login": "ded007",
   "password": "ds215Sa6",
-  "euro": true
+  "is_admin": false
 },
 {
   "_id": {
@@ -96,7 +96,7 @@
   "__v": 0,
   "login": "krups",
   "password": "21SFfa1",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -106,7 +106,7 @@
   "__v": 0,
   "login": "wellik11",
   "password": "aa9911v",
-  "euro": true
+  "is_admin": true
 },
 {
   "_id": {
@@ -116,7 +116,7 @@
   "__v": 0,
   "login": "tam_aleks",
   "password": "Ask17af",
-  "euro": true
+  "is_admin": false
 },
 {
   "_id": {
@@ -126,7 +126,7 @@
   "__v": 0,
   "login": "shiha770",
   "password": "Sfgj17vja",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -136,7 +136,7 @@
   "__v": 0,
   "login": "kir_sm",
   "password": "KLkf71hfv",
-  "euro": true
+  "is_admin": false
 },
 {
   "_id": {
@@ -146,7 +146,7 @@
   "__v": 0,
   "login": "aleks_rum",
   "password": "asf7gH",
-  "euro": true
+  "is_admin": false
 },
 {
   "_id": {
@@ -156,7 +156,7 @@
   "__v": 0,
   "login": "melekhstas",
   "password": "Sff112z",
-  "euro": false
+  "is_admin": false
 },
 {
   "_id": {
@@ -165,5 +165,5 @@
   "name": "Намаз",
   "login": "kurbanov",
   "password": "n214msa",
-  "euro": true
+  "is_admin": false
 }]

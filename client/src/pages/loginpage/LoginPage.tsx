@@ -12,6 +12,7 @@ export const LoginPage: FC = () => {
     e.preventDefault();
     try {
       const res = await loginHandler(login, password);
+      navigate('home')
     } catch (e) {
       alert("");
     }

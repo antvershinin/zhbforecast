@@ -55,6 +55,7 @@ class AdminUtils {
       const previousTable = previousTour.table;
 
       const index = String(matches.findIndex((el) => el.id === data.id));
+      console.log(data)
       matches[index].score1 = data.score1;
       matches[index].score2 = data.score2;
       (matches[index].result =
@@ -79,9 +80,9 @@ class AdminUtils {
               el.user_forecast[i].score2 === matches[i].score2 &&
               matches[i].result !== ""
             )
-              el.user_score[i] = double ? 10 : 5;
+              el.user_score[i] = double ? 8 : 4;
             else if (
-              Number(el.user_forecast[i].score1) -
+              Number(el.user_forecast[i].score1) - 
                 Number(el.user_forecast[i].score2) ==
                 Number(matches[i].score1) - Number(matches[i].score2) &&
               matches[i].result !== ""
@@ -171,6 +172,29 @@ class AdminUtils {
       return result;
     } catch (e) {
       console.log(e);
+    }
+  }
+
+  async setTourWinner(id) {
+    try {
+      const currentTour = await Tour.findOne().sort({ tour_number: -1 });
+      const {table} = currentTour
+      table.map(el=> {
+        if (el.user_id === id.id) el.tours += 1
+      })
+
+      const updated = await Tour.findByIdAndUpdate(
+        currentTour._id,
+        {
+          table,
+        },
+        { new: true }
+      );
+
+      return updated
+
+    } catch (e) {
+      console.log(e)
     }
   }
   async editScoreEuro(data: { id: string; score1: number; score2: number }) {

@@ -17,5 +17,7 @@ export const RPLTableRow = ({props, standings, missed_forecasts} : {props :  IRP
         <div className={style.points}>{props.draws}</div>
         <div className={style.points}>{props.losses}</div>
         <div className={style.points_big}>{props.forecast_points}</div>
+        <div className={style.points}>{props.tours > 0 ? props.tours : '-'}</div>
     </div>
 }
+

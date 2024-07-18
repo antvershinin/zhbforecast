@@ -38,6 +38,7 @@ const TourSchema = new mongoose.Schema({
       draws: { type: Number, default: 0 },
       losses: { type: Number, default: 0 },
       forecast_points: { type: Number, default: 0 },
+      tours:{type : Number, default:0}
     },
   ],
 });

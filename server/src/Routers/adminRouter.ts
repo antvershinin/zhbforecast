@@ -9,6 +9,8 @@ adminRouter.get("/getteams", adminController.getTeams);
 
 adminRouter.put("/rpl/editscore", adminController.editScoreRPL);
 
+adminRouter.put('/rpl/settourwinner', adminController.setTourWinner)
+
 adminRouter.post("/euro/setmatches", adminController.setEUROMatches);
 
 adminRouter.put('/euro/editscore', adminController.editScoreEuro)

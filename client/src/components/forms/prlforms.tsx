@@ -47,9 +47,10 @@ export const RPLForecastForm: FC<Props> = (props) => {
                       style={{
                         display: "flex",
                         width: "350px",
-                        fontSize: "25px",
+                        fontSize: "20px",
                         fontFamily: "Mitr",
                         justifyContent: "center",
+                        
                       }}
                       key={index}
                     >
@@ -103,7 +104,7 @@ export const RPLForecastForm: FC<Props> = (props) => {
             </FieldArray>
             <button
               style={{
-                backgroundColor: "red",
+                backgroundColor: "rgb(192, 164, 7)",
                 height: "50px",
                 fontSize: "20px",
                 color: "white",
