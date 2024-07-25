@@ -38,7 +38,9 @@ const TourSchema = new mongoose.Schema({
       draws: { type: Number, default: 0 },
       losses: { type: Number, default: 0 },
       forecast_points: { type: Number, default: 0 },
-      tours:{type : Number, default:0}
+      tours:{type : Number, default:0},
+      matches : [{user1:String, score1 : Number, user2: String, score2 : Number}]
+
     },
   ],
 });
@@ -83,7 +85,7 @@ const UserSchema = new mongoose.Schema({
   password: { type: String, required: true },
   euro: Boolean,
   is_admin : Boolean,
-  euro24: String
+  euro24: String,
 });
 
 

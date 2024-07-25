@@ -10,7 +10,7 @@ import { getMeDB, loginDB } from "../api/userApi";
 export interface IUser {
   user_id: string;
   user_name: string;
-  is_admin : boolean
+  is_admin : boolean;
 }
 
 interface IContext {

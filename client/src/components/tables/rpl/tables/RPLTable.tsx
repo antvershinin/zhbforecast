@@ -14,9 +14,9 @@ export const RPLTable : FC<Props> = (props) => {
     <div className={style.row} style={{flexDirection:'row-reverse'}}>      
         <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>туры</div>
         <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>баллы</div>
-        <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>исх</div>
-        <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>разн</div>
-        <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>тс</div>
+        <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>п</div>
+        <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>н</div>
+        <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>в</div>
         <div className={style.points} style={{transform:'rotate(-55deg)', paddingBottom:10}}>очки</div>
         
         </div> 

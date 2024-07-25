@@ -38,6 +38,7 @@ class UserController {
         user_name: user.name,
         user_id:user._id,
         is_admin : user.is_admin
+        
       };
 
       res.send({

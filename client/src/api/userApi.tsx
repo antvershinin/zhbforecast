@@ -6,6 +6,7 @@ export const loginDB = async (login: string, password: string) => {
     login,
     password,
   });
+
   return user.data;
 };
 

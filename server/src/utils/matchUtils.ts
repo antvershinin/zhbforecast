@@ -8,7 +8,6 @@ class MatchUtils {
     try {
       const tour = await Tour.findOne().sort({ tour_number: -1 });
       const { table, forecasts, matches } = tour;
-
       table.sort((a, b) => {
         return (
           b.points - a.points ||

@@ -24,6 +24,7 @@ export const HomePage = () => {
 
   }, [getmeHandler, token]);
 
+
   return (
     <div className={style.main}>
       <div className={style.image_wrapper} onClick={() => navigate("/rpl")}>

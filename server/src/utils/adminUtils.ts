@@ -1,6 +1,7 @@
 import { Team, User, Tour, Eurotour, Euro24Tour } from "../models/Models";
 import { sortPlayers } from "./helpers";
 
+
 interface IReqEditscore {
   id: string;
   score1: number;
@@ -20,6 +21,18 @@ class AdminUtils {
       const previousTable = currentTour.table;
       const forecasts = [];
       const matchesUpdated = [];
+
+      currentTour.forecasts.forEach((el, ind)=>{
+        const index = previousTable.findIndex(user=>el.user_id === user.user_id)
+        const tumbler = ind === 0 || ind % 2 === 0 ? ind + 1 : ind - 1
+        previousTable[index].matches.push({
+          user1 : el.user_name,
+          score1 : el.forecast_points,
+          user2 : currentTour.forecasts[tumbler].user_name,
+          score2 : currentTour.forecasts[tumbler].forecast_points,
+        })
+      })
+
 
       data.matches.map((el, index) => {
         for (let i = 0; i < 2; i++) {
@@ -41,7 +54,7 @@ class AdminUtils {
         forecasts: forecasts,
         table: previousTable,
       });
-
+ 
       return matches1;
     } catch (e) {
       console.log(e);
@@ -54,10 +67,10 @@ class AdminUtils {
       const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
       const previousTable = previousTour.table;
 
+
       const index = String(matches.findIndex((el) => el.id === data.id));
-      console.log(data)
-      matches[index].score1 = data.score1;
-      matches[index].score2 = data.score2;
+      matches[index].score1 = Number(data.score1);
+      matches[index].score2 = Number(data.score2);
       (matches[index].result =
         data.score1 > data.score2
           ? "1"

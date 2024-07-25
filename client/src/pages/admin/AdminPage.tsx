@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { editScoreRPL, getTeams, ITeam, setRPLMatches, setRPLTourWinner } from "../../api/adminApi";
+import {
+  editScoreRPL,
+  getTeams,
+  ITeam,
+  setRPLMatches,
+  setRPLTourWinner,
+} from "../../api/adminApi";
 import { JSX } from "react/jsx-runtime";
 import { getRplMatches } from "../../api/matchesApi";
 import { IRPLMatch } from "../rplpage/RplPage";
@@ -10,15 +16,20 @@ export interface ISetRPLMatch {
 }
 
 interface IEditMatch {
-    id:string,
-    score1:number,
-    score2:number
+  [x: string]: string | number | undefined;
+  id?: string | undefined;
+  score1?: number | undefined;
+  score2?: number | undefined;
 }
 
 export const AdminPage = () => {
   const [data, setData] = useState<ITeam[]>([]);
   const [tourMatches, setTourMatches] = useState<IRPLMatch[]>([]);
-  const [users, setUsers] = useState<{user_id : string, user_name : string}[]>([])
+  const [users, setUsers] = useState<{ user_id: string; user_name: string }[]>(
+    []
+  );
+  const [editMatch, setEditMatch] = useState<IEditMatch | null>(null);
+  const [editId, setEditId] = useState('')
 
   const match: ISetRPLMatch[] = [];
   for (let i = 0; i < 8; i++) {
@@ -28,19 +39,18 @@ export const AdminPage = () => {
     };
   }
 
-  
   const makeTour = () => {
-      const handleChange = (
-        value: string,
-        matchNumber: number,
-        teamNumber: number
-      ) => {
-        const data = JSON.parse(value);
-        match[matchNumber].teams[teamNumber] = data.id;
-        match[matchNumber].teams_names[teamNumber] = data.name;
-      };
+    const handleChange = (
+      value: string,
+      matchNumber: number,
+      teamNumber: number
+    ) => {
+      const data = JSON.parse(value);
+      match[matchNumber].teams[teamNumber] = data.id;
+      match[matchNumber].teams_names[teamNumber] = data.name;
+    };
     const matches: JSX.Element[] = [];
-    
+
     for (let i = 0; i < 8; i++) {
       matches.push(
         <div
@@ -91,21 +101,27 @@ export const AdminPage = () => {
 
   const editScore = () => {
     const matches: JSX.Element[] = [];
-    const editMatch : IEditMatch = {
-        id: "",
-        score1: 0,
-        score2: 0
-    }
 
-    const handleSubmit = async (i:number) => {
-        editMatch.id = tourMatches[i]._id
-        await editScoreRPL(editMatch)
+    const handleSubmit = async () => {
+       editScoreRPL(editMatch)
+      setEditMatch(null)
+      setEditId('')
+    };
+
+    const handleClick = (id: string) => {
+      setEditId(id);
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      setEditMatch({...editMatch, id:editId, [e.target.name]: Number(e.target.value)})
+      console.log(editMatch)
     }
 
     for (let i = 0; i < 8; i++) {
       matches.push(
         <form
-        onSubmit={()=>handleSubmit(i)}
+          onSubmit={handleSubmit}
+          onClick={() => handleClick(tourMatches[i]._id)}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -114,6 +130,7 @@ export const AdminPage = () => {
           }}
         >
           <div
+            key={tourMatches[i]._id}
             style={{
               width: 325,
               display: "flex",
@@ -123,12 +140,18 @@ export const AdminPage = () => {
           >
             <div style={{ width: 145 }}>{tourMatches[i].teams_names[0]}</div>
             <input
-            onChange={(e)=>editMatch.score1 = Number(e.target.value)}
+              name="score1"
+              type="number"
+              disabled={tourMatches[i]._id !== editId}
+              onChange={(e)=>handleChange(e)}
               style={{ width: 20 }}
             ></input>
             <p>:</p>
             <input
-           onChange={(e)=>editMatch.score2 = Number(e.target.value)}
+            name="score2"
+              type="number"
+              disabled={tourMatches[i]._id !== editId}
+              onChange={(e)=>handleChange(e)}
               style={{ width: 20 }}
             ></input>
             <div style={{ width: 145, display: "flex", justifyContent: "end" }}>
@@ -143,26 +166,28 @@ export const AdminPage = () => {
   };
 
   const setTourWinner = () => {
-    const options : JSX.Element[] = []
+    const options: JSX.Element[] = [];
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const winnerObj = JSON.parse(e.target.value)
-        winner = winnerObj.user_id
-    }
-    let winner = ''
-    users && options.push(<>
-        <select onChange={(e)=>handleChange(e)}>      
-        {users &&
+      const winnerObj = JSON.parse(e.target.value);
+      winner = winnerObj.user_id;
+    };
+    let winner = "";
+    users &&
+      options.push(
+        <>
+          <select onChange={(e) => handleChange(e)}>
+            {users &&
               users.map((el) => (
                 <option key={el.user_id} value={JSON.stringify(el)}>
                   {el.user_name}
                 </option>
-              ))}  
-        </select>
-        <button onClick={()=>setRPLTourWinner(winner)}>Отправить</button>
-        </>)
-        return options
-    }
-  
+              ))}
+          </select>
+          <button onClick={() => setRPLTourWinner(winner)}>Отправить</button>
+        </>
+      );
+    return options;
+  };
 
   useEffect(() => {
     const getData = async () => {
@@ -170,11 +195,11 @@ export const AdminPage = () => {
       const tour = await getRplMatches();
       setData(teams);
       setTourMatches(tour.tour.matches);
-      const users: {user_id : string, user_name : string}[] = []
-      tour.tour.table.forEach((el: { user_id: string; user_name : string })=>{
-        users.push({user_id : el.user_id, user_name: el.user_name})
-      })
-      setUsers([...users])
+      const users: { user_id: string; user_name: string }[] = [];
+      tour.tour.table.forEach((el: { user_id: string; user_name: string }) => {
+        users.push({ user_id: el.user_id, user_name: el.user_name });
+      });
+      setUsers([...users]);
     };
     getData();
   }, []);
@@ -187,12 +212,14 @@ export const AdminPage = () => {
         {makeTour()}
       </div>
       {users && (
-        <div style={{ display: "flex", flexDirection: "column", marginBottom: 30  }}>
-        {setTourWinner()}
-      </div>
+        <div
+          style={{ display: "flex", flexDirection: "column", marginBottom: 30 }}
+        >
+          {setTourWinner()}
+        </div>
       )}
       {tourMatches.length && (
-          <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           {editScore()}
         </div>
       )}
