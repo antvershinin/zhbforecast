@@ -23,6 +23,7 @@ class AdminController {
   async setTourWinner(req:Request, res:Response) {
     try {
       const data = await adminUtils.setTourWinner(req.body)
+      console.log(req.body)
       res.send(data) 
     } catch (e) {
       console.log(e)
@@ -31,7 +32,8 @@ class AdminController {
 
   async editScoreRPL(req: Request, res: Response) {
     try {
-      const data = await adminUtils.editScoreRPL(req.body.match);
+      const data = await adminUtils.editScoreRPL(req.body);
+      console.log('req', req.body)
       res.send(data);
     } catch (e) {
       console.log(e);

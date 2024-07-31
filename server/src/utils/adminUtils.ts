@@ -3,9 +3,10 @@ import { sortPlayers } from "./helpers";
 
 
 interface IReqEditscore {
-  id: string;
-  score1: number;
-  score2: number;
+  match? : {id: string;
+    score1: number;
+    score2: number;},
+  
 }
 
 interface IReqSettour {
@@ -48,6 +49,10 @@ class AdminUtils {
         }
       });
 
+      await Tour.findOneAndUpdate({tour_number : currentTour.tour_number}, {
+        table:currentTour.table
+      }, {new : true})
+
       const matches1 = await Tour.create({
         tour_number: currentTour.tour_number + 1,
         matches: data.matches,
@@ -67,14 +72,15 @@ class AdminUtils {
       const previousTour = await Tour.findOne({ tour_number: tour_number - 1 });
       const previousTable = previousTour.table;
 
-
-      const index = String(matches.findIndex((el) => el.id === data.id));
-      matches[index].score1 = Number(data.score1);
-      matches[index].score2 = Number(data.score2);
+ 
+      const index = String(matches.findIndex((el) => el.id === data.match.id));
+      console.log(data.match)
+      matches[index].score1 = Number(data.match.score1);
+      matches[index].score2 = Number(data.match.score2);
       (matches[index].result =
-        data.score1 > data.score2
+        data.match.score1 > data.match.score2
           ? "1"
-          : data.score2 > data.score1
+          : data.match.score2 > data.match.score1
           ? "2"
           : "X"),
         forecasts.map((el) => {
